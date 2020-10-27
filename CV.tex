@@ -51,8 +51,14 @@
 
 \usepackage{tikzpagenodes}
 
-\usepackage{fontawesome}
+\usepackage{fontawesome} %github icon
 
+\usepackage{changepage} %margin change
+
+\usepackage{enumitem}
+\usepackage{pifont}
+
+\usepackage[absolute,overlay]{textpos}
 
 % \name{Aritz Lizoain} % Your name
 % %\address{156 Kasturi, Balajinagar, Sangli 416416} % Your address
@@ -78,77 +84,68 @@ Phone number: (\Plus 41) 77 991 82 14
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{{\large Education}}
-\begin{itemize}
-    
-
- \item {\bf University of Cantabria} \hfill {\bf Santander, Spain} \newline {Bachelor of Science in Physics }\hfill{\em August 2016 - September 2020}  
-\newline
-{\bf Relevant courses: }%Advanced Computation, Programming, Numerical Methods, Laboratory Computational Tools, Advanced Experimental Techniques (with honors), Ordinary Differential Equations, Partial Differential Equations, Differential Calculus, Integral Calculus, Linear Algebra and Geometry %4 lines
-%Advanced Computation, Programming, Numerical Methods, Laboratory Computational Tools, Advanced Experimental Techniques (with honors), Ordinary Differential Equations, Partial Differential Equations, Differential Calculus, Integral Calculus, Linear Algebra %3 lines full
-Advanced Computation, Programming, Numerical Methods, Laboratory Computational Tools, Advanced Experimental Techniques (with honors), Ordinary and Partial Differential Equations, Linear Algebra, Differential and Integral Calculus. %3 lines
-%Advanced Computation, Programming, Numerical Methods, Laboratory Computational Tools, Advanced Experimental Techniques (with honors), ODE, PDE, Differential and Integral Calculus, Linear Algebra %2.5 lines
-
+\begin{adjustwidth}{-6mm}{0pt}
+\small{\em{2016 - 2020}} \normalsize \hspace{5pt} {\bf Universidad de Cantabria (UC)} \hfill {\bf Santander, Spain}
+\end{adjustwidth}
+\vspace{-7pt}
+\begin{adjustwidth}{15mm}{0pt}\textit{Bachelor of Science in Physics}\newline
+{\bf Relevant courses: }Advanced Computation, Programming, Numerical Methods, Laboratory Computational Tools, Advanced Experimental Techniques (with honors), Ordinary and Partial Differential Equations, Linear Algebra, Differential and Integral Calculus.
 \newline
 {\bf Relevant topics: }Data processing, numerical analysis, object-oriented programming, probability and statistics, software development.
+\end{adjustwidth}
 
-
-\item {\bf University of Zurich / Erasmus\Plus} \hfill {\bf Z{\"u}rich, Switzerland} \newline {Bachelor of Science in Physics }\hfill{\em August 2018 - September 2019}  
-\newline
+\begin{adjustwidth}{-6mm}{0pt}
+\small{\em{2018 - 2019}} \normalsize \hspace{5pt} {\bf Universit{\"a}t Z{\"u}rich (UZH) / Erasmus\Plus} \hfill {\bf Z{\"u}rich, Switzerland}
+\end{adjustwidth}
+\vspace{-7pt}
+\begin{adjustwidth}{15mm}{0pt}\textit{Bachelor of Science in Physics}\newline
 {\bf Relevant courses: }Statistical Mechanics and Molecular Simulations.
-\newline
-
-\end{itemize}
+\end{adjustwidth}
 \end{rSection}
-\vspace{-12pt}
+\vspace{-0pt}
 
 %--------------------------------------------------------------------------------
 %    Projects And Seminars
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{\large{Experience \& Projects {\href{https://github.com/aritzLizoain}{\faicon{github}}}}}
-
-\begin{itemize}
-%\item
-\subsection*{\href{https://github.com/aritzLizoain/CNN-Image-segmentation}{CNN Image segmentation}}
+\begin{adjustwidth}{-6mm}{0pt}
 \vspace{-8pt}
-{\em Duration: 7 months}
-%{\em February 2020 - Present}
+ \subsection*{\href{https://github.com/aritzLizoain/CNN-Image-segmentation}{CNN Image segmentation}}
+\vspace{-8pt}
+\textit{Duration: 7 months}
+\end{adjustwidth} 
+\begin{adjustwidth}{-3.5mm}{0pt}
 \begin{itemize}
-\item %so it shows all the other ones
-
- \item Developed a deep learning application for research on dark matter. The software performed multi-class image segmentation on images from direct detection experiments. Worked in the implementation of:
-
- \begin{itemize}
-     \item Image pre-processing
-     \item Network structure and parameter optimization
-     \item Model training and testing
- \end{itemize}
-
-  %OpenCV-Python
-
- \item Employed main packages: TensorFlow, Keras, scikit-learn, OpenCV, scikit-image, Pandas, NumPy.
- 
-  \item As a result of the obtained exceptional results, offered the opportunity to contribute in the 'DarkMachines' collaboration.
+\item Initiated a deep learning implementation focused on dark matter searches.
+\item Developed a multi-class image segmentation software.
+\item Pre-processed simulated and real data.
+\item Built and optimized neural network structures and parameters. 
+\item Strengthened practical machine learning knowledge training and evaluating models.
+\item Employed numerous Python packages: TensorFlow, Keras, scikit-learn, OpenCV-Python, scikit-image, Pandas, NumPy, Matplotlib.
+\item As a result of the obtained exceptional results, earned the opportunity to contribute in the 'DarkMachines' collaboration.
 
 \end{itemize}
-
+\end{adjustwidth}
+\begin{adjustwidth}{-6mm}{0pt}
 \vspace{-8pt}
 \subsection*{MD simulation}
 \vspace{-8pt}
-{\em Duration: 5 months}
-%{\em September 2019 - January 2020}
+\textit{Duration: 5 months}
+\end{adjustwidth}
+\begin{adjustwidth}{-3.5mm}{0pt}
 \begin{itemize}
-\item %so it shows all the other ones
-\item Designed and developed a molecular dynamics software in Java, with the assistance of a Fortran90 code, obtaining an outstanding grade in the Advanced Computation course.
-\item Excellent group communication and organization established. The team was highly focused on specific customer needs; experience, modularity and performance.
-    \item Programming knowledge: software modeling (UML), computational complexity and algorithmic efficiency.
+\item Designed and developed a molecular dynamics software in Java, obtaining an outstanding grade in the Advanced Computation course.
+\item Gained insight in software modeling (UML), computational complexity and algorithmic efficiency.
+\item Focused on specific customer needs: experience, modularity and performance.
+\item Established excellent group communication and organization.
 
 \end{itemize}
+\end{adjustwidth}
 %\end{multicols}
     
 % FOR MOTIVATION LETTER Data analysis knowledge applied in a wide range of fields, such as astrophysics, particle physics, optics, physical chemistry or materials science.
 %Knowledge including database information selection and extraction, numerical calculations, data selection, Jupyter Python usage, finding best fitting processes with Matlab, representation with Mathematica, visualization, numerical methods , 
 
-\end{itemize}
 \end{rSection}
 
 
@@ -158,45 +155,54 @@ Advanced Computation, Programming, Numerical Methods, Laboratory Computational T
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\large{Skills \& Interests}}
-\vspace{-9.15pt}
 \begin{multicols}{3}
 
-\begin{itemize}
-    
+\begin{textblock*}{5.8cm}(2.1cm,19.45cm) % {block width} (coords)
+\begin{rSection}{\large{Technical Skills}}
+\end{rSection}
+\end{textblock*}
 
-\item
-{\bf Technical Skills: }
-\vspace{-5pt}
-\begin{itemize}\setlength\itemsep{-8.5pt}
+\begin{textblock*}{10cm}(2.1cm,20.45cm) % {block width} (coords)
+\begin{itemize}\setlength\itemsep{-4.5pt}
     \item Python
     \item Java
     \item MATLAB
     \item SQL
     \item Wolfram Mathematica
-    
 \end{itemize}
-\item
-{\bf Languages:}
-\vspace{-5pt}
-\begin{itemize}\setlength\itemsep{-6.5pt}
+\end{textblock*}
+
+\begin{textblock*}{5.8cm}(8.3555cm,19.45cm) % {block width} (coords)
+\begin{rSection}{\large{Languages}}
+\end{rSection}
+\end{textblock*}
+\begin{textblock*}{10cm}(8.3555cm,20.45cm) % {block width}
+\begin{itemize}\setlength\itemsep{-4.5pt}
     \item Spanish (native)
     \item Basque (native)
     \item English (advanced C1)
     \item French (intermediate B1)
 \end{itemize}
+\end{textblock*}
 
-\item
-{\bf Achievements and Interests:}
-\begin{itemize}\setlength\itemsep{-8.5pt}
-    \item Earned the International Diploma in Physics
-    \item Studying machine learning applications
-    \end{itemize}
-
-\end{itemize}
-\end{multicols}
+\begin{textblock*}{5.8cm}(14.611cm,19.45cm) % {block width} (coords)
+\begin{rSection}{\large{Interests}}
 \end{rSection}
+\end{textblock*}
+\begin{textblock*}{10cm}(14.611cm,20.45cm) % {block width} (coords)
+\begin{itemize}\setlength\itemsep{-4.5pt}
+    \item Reinforcement learning (RL)
+    \item Mobile app development
+    \item Algorithmic trading
+    \end{itemize}
+    \end{textblock*}
+
+    
+\end{multicols}
 
 %NO SPACE BELOW!!!!!!!!
 %NO SOFT SKILLS AND UNRELATED HOBBIES OR SKILLS (BS ADVICE)
 \end{document}
+
+% interests fix
+
