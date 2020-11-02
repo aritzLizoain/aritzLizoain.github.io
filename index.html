@@ -1,3 +1,5 @@
+<!-- BEGINNING -->
+<!-- Followed: https://www.youtube.com/watch?v=T7PnWnTgusc&t=1089s&ab_channel=JulioCodes -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +10,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 </head>
+
+<!-- STRUCTURE -->
+<!-- 1 Home = 1 Home -->
+<!-- 2 About = 2 About -->
+<!-- 3 Services = 5 Skills (Technical + Languages) -->
+<!-- 4 Portfolio = 3 Projects -->
+<!-- 5 Experience = 4 Education -->
+<!-- 6 Contact = 6 Contact -->
 <body>
   <p>Open as <a href="https://www.dropbox.com/s/m08rn2hn9u6d1te/CV_Aritz_Lizoain_PDF.pdf?dl=0">PDF</a></p>
   <p>Website in progress...</p>
@@ -34,7 +44,7 @@
           <a href="#skills" class="nav-link">Skills</a>
         </li>
         <li>
-          <a href="#contat" class="nav-link">Contact</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -43,7 +53,8 @@
       <h6>Physics graduate | ML</h6>
     </div>
   </header>
-
+  
+  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
       <div class="profile-img">
@@ -54,7 +65,7 @@
           <h1>About</h1>
           <h6>Myself</h6>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem eius amet? Nesciunt optio totam ut harum amet dolore vero aspernatur eligendi facilis mollitia, libero error animi, excepturi, consequuntur in?</p>
+        <p>Information</p>
       </div>
       <div class="social-media">
         <ul class="nav-list">
@@ -73,6 +84,145 @@
       </div>
     </div>
   </section>
+
+  <!-- PROJECTS -->
+  <section class="Projects" id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Projects</h1>
+        <h6>View some of my projects</h6>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="images/CNN.png" alt="" width="200">
+        </div>
+        <div class="portfolio-description">
+          <h6>CNN Image Segmentation</h6>
+          <h1>Deep-learning project</h1>
+          <p>Information about the project.</p>
+          <a href="https://github.com/aritzLizoain" class="cta">View Details</a>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-description">
+          <h6>MD simulation</h6>
+          <h1>Java Molecular Dynamics project</h1>
+          <p>Information.</p>
+          <a href="https://github.com/aritzLizoain" class="cta">View Details</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="images/CNN.png" alt="" width="200">
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="images/CNN.png" alt="" width="200">
+        </div>
+        <div class="portfolio-description">
+          <h6>Other projects</h6>
+          <h1>Small projects</h1>
+          <p>Information.</p>
+          <a href="https://github.com/aritzLizoain" class="cta">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Others" id="other">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Other</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="Education" id="education">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Education</h1>
+        <h6>Past and current education</h6>
+      </div>
+      <div class="timeline">
+        <ul>
+          <li class="date" data-date="2016 - Present">
+            <h1>UC</h1>
+            <p>Information about UC</p>
+          </li>
+          <li class="date" data-date="2018 - 2019">
+            <h1>UZH</h1>
+            <p>Information about UZH</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="Skills" id="skills">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Skills</h1>
+        <h6>Technical skills</h6>
+      </div>
+      <div class="my-skills">
+        <div class="skill">
+          <div class="icon-container"> 
+            <i class="fas fa-layer-group"></i> <!-- Check icons that suit -->
+          </div>
+          <h1>Python</h1>
+          <p>Information?</p>
+        </div>
+        <div class="skill">
+          <div class="icon-container">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h1>Java</h1>
+          <p>Information</p>
+        </div>
+        <div class="skill">
+          <div class="icon-container">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h1>MATLAB</h1>
+          <p>Info</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="Contact" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Contact</h1>
+        <h6>Contact me</h6>
+      </div>
+      <form action="">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" placeholder="Enter your E-mail..." required>
+        <label for="project">Projects:</label>
+        <select name="projects" id="project">
+          <option value="">Web Design</option>
+          <option value="">Web Development</option>
+          <option value="">Web Design/Development</option>
+        </select>
+        <label for="subject">Subject:</label>
+        <textarea name="subject" id="subject" cols="20" rows="1"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    <div>
+  <section> 
+    
+  <!-- FOOTER -->
+  <footer class="copyright">
+    <div class="up" id="up">
+      <i class="fas fa-chevron-up"></i>
+      <p>&copy; 2020 Aritz Lizoain</p>
+    </div>
+  </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
