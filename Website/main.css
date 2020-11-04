@@ -1,10 +1,143 @@
+/* Followed: https://www.youtube.com/watch?v=T7PnWnTgusc&t=1089s&ab_channel=JulioCodes */
 /*Start global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif; /* Aldatu daiteke */
+    color: #eee; /* Aldatu daiteke */
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: url("images/Background.jpg") no-repeat center fixed; /* Aldatu daiteke */
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+img{
+    width: 100%;   
+}
+
 /*End global*/
+
 
 /*Start reusable*/
 /*End reusable*/
 
 /*Start header*/
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.top-nav{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    background-color: #16162d; /* Aldatu daiteke */
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: all 650ms cubic-bezier(1,0,0,1);
+}
+
+.nav-list{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    margin: 0 2rem;
+}
+
+.nav-link{
+    font-family: 'Dancing Script', cursive; /* Aldatu daiteke */
+    /* https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing */
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    background: linear-gradient(to top, #ffe838, #fd57bf); /* Aldatu daiteke */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top-nav.open{
+    top: 0;
+    border-radius: initial;
+}
+
+.menu-toggler{
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: transform 650ms ease-out;
+}
+
+.menu-toggler.open{
+    transform: rotate(-45deg);
+}
+
+.bar{
+    background: linear-gradient(to right, #ffe838, #fd57bf); /* Aldatu daiteke */
+    width: 100%;
+    height: 4px; /* Aldatu daiteke */
+    border-radius: .8rem; /* Aldatu daiteke */
+}
+
+.bar.half{
+    width: 50%;
+}
+
+.bar.start{
+    transform-origin: right;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.start{
+    transform: rotate(-450deg) translateX(.8rem);
+}
+
+.bar.end{
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.end{
+    transform: rotate(-450deg) translateX(-0.8rem);
+}
+
+
+
 /*End header*/
 
 /*Start about*/
