@@ -1,4 +1,6 @@
 /* Followed: https://www.youtube.com/watch?v=T7PnWnTgusc&t=1089s&ab_channel=JulioCodes */
+/* -----------------------------------------------------GLOBAL--------------------------------------------------------------- */
+
 /*Start global*/
 *{
     margin: 0;
@@ -24,6 +26,10 @@ a{
     color: #eee;
 }
 
+section{
+    padding: 6rem;
+}
+
 p{
     font-size: 1.8rem;
     font-weight: 300;
@@ -32,12 +38,65 @@ p{
 img{
     width: 100%;   
 }
-
 /*End global*/
-
+/* ----------------------------------------------------REUSABLE---------------------------------------------------------------- */
 
 /*Start reusable*/
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.section-heading h1{
+    font-size: 3.5rem;
+    color: rgba(255,255,255, .3);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255,0.75);
+}
+
+.section-heading h1::before{
+    width: 10rem;
+    height: 3px;
+    border-radius: .8rem;
+}
+
+.section-heading h1::after{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    bottom: -1.05rem;
+}
+
+.section-heading h6{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.has-margin-right{
+    margin-right: 5rem;
+}
 /*End reusable*/
+/* -----------------------------------------------------HEADER--------------------------------------------------------------- */
 
 /*Start header*/
 header{
@@ -50,6 +109,7 @@ header{
     height: 100vh;
     position: fixed;
     top: -100vh;
+    z-index: 50;
     background-color: #16162d; /* Aldatu daiteke */
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -136,30 +196,325 @@ li{
     transform: rotate(-450deg) translateX(-0.8rem);
 }
 
+.landing-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
 
+.landing-text h1{
+    font-size: 20rem; /* Aldatu daiteke */
+    font-family: 'Dancing Script', cursive; /* Aldatu daiteke */
+    background: linear-gradient(to top, #ffe838, #fd57bf); /* Aldatu daiteke */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none;
+}
 
+.landing-text h6{
+    font-size: 2rem; /* Aldatu daiteke */
+    font-weight: 600; /* Aldatu daiteke */
+}
 /*End header*/
+/* ------------------------------------------------------ABOUT-------------------------------------------------------------- */
 
 /*Start about*/
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-heading{
+    text-align: center;
+    text-transform: uppercase;  
+    line-height: 0;
+    margin-bottom: 6rem;
+}
+
+.about-heading h1{
+    font-size: 10rem; /* Aldatu daiteke */
+    opacity: .3; /* Aldatu daiteke */
+}
+
+.about-heading h6{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.profile-img{
+    flex: 1;
+    margin-right: 5rem;
+}
+
+.about-details{
+    flex: 1;
+}
+
+.social-media{
+    margin-top: 5rem;
+}
+
+.social-media i{
+    font-size: 5rem;
+    transition: color 650ms;
+}
+
+.fa-linkedin-in:hover{
+    color:#2867B2;
+}
+
+.fa-github:hover{
+    color:#6e5494;
+}
 /*End about*/
+/* -------------------------------------------------------PROJECTS----------------------------------------------------------- */
 
-/*Start services*/
-/*End services*/
+/*Start projects*/
+.projects-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
 
-/*Start portfolio*/
-/*End services*/
+}
 
-/*Start timeline*/
-/*End timeline*/
+.projects-item:last-child{
+    margin-bottom: 0;
+}
+
+.profile-img{
+    width: 50rem; /* Tamaina aldatu dezaket */
+    flex: 1;
+}
+
+.projects-description .cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff; /* Make view details get color like the navigation words when clicked */
+    transition: color 650ms;
+}
+
+.projects-description .cta:hover{
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projects-description h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.projects-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: .3;
+}
+/*End projects*/
+/* -------------------------------------------------------EDUCATION---------------------------------------------------------- */
+
+/*Start education timeline*/
+.education ul{
+    border-left: 4px solid #ffe838; /* Maybe change the colors to those pink/yellow or new combination */
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style-type: none;
+    text-align: left;
+    width: 70%;
+}
+
+.education h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: .3; /* Maybe change opacities */
+}
+
+.education .date{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.education .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.education .date::before,
+.education .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.education .date::before{
+    content: attr(data-date);
+    left: -21rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.5rem;
+}
+
+.education .date::after{
+    content: '';
+    box-shadow: 0 0 0 4px #fd57bf;
+    border-radius: 100%;
+    left: -7.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #313531;
+}
+/*End education timeline*/
+/* --------------------------------------------------------SKILLS------------------------------------------------------------ */
+
+/*Start skills*/
+.my-skills{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    text-align: center;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.skill h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0
+}
+
+.icon-container{
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid #ffe838; /* Aldatu daiteke */
+    background-color: #fd57bf; /* Aldatu daiteke */
+    margin-bottom: 2rem;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+.icon-container i{
+    color: #ffe838;
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(-45deg);
+}
+/*End skills*/
+/* --------------------------------------------------------CONTACT---------------------------------------------------------- */
 
 /*Start contact*/
+.contact{
+    background-color: #221e3f
+}
+
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+form label{
+    font-size: 1.5rem;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: #fd57bf;
+}
+
+input[type="submit"]{
+    width: initial;
+    background-color: #fd57bf;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+
+input[type="submit"]:hover{
+    color: #221e3f;
+    background-color: #ffe838;
+}
 /*End contact*/
+/* --------------------------------------------------------FOOTER------------------------------------------------------------ */
 
 /*Start footer*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+}
+
+.up i{
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
 /*End footer*/
+/* -------------------------------------------------------ANIMATIONS--------------------------------------------------------- */
 
 /*Start animations*/
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
 /*End animations*/
+/* ---------------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
 
 /*Start media queries*/
 /*End media queries*/
