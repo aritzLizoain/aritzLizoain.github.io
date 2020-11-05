@@ -27,7 +27,7 @@ a{
 }
 
 section{
-    padding: 6rem;
+    padding: 6rem 0;
 }
 
 p{
@@ -138,7 +138,7 @@ li{
 
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(to top, #ffe838, #fd57bf); /* Aldatu daiteke */
+    background: linear-gradient(to top, #24c8f0, #fd57bf); /* Aldatu daiteke */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -167,7 +167,7 @@ li{
 }
 
 .bar{
-    background: linear-gradient(to right, #ffe838, #fd57bf); /* Aldatu daiteke */
+    background: linear-gradient(to right, #24c8f0, #fd57bf); /* Aldatu daiteke */
     width: 100%;
     height: 4px; /* Aldatu daiteke */
     border-radius: .8rem; /* Aldatu daiteke */
@@ -209,7 +209,7 @@ li{
 .landing-text h1{
     font-size: 20rem; /* Aldatu daiteke */
     font-family: 'Dancing Script', cursive; /* Aldatu daiteke */
-    background: linear-gradient(to top, #ffe838, #fd57bf); /* Aldatu daiteke */
+    background: linear-gradient(to top, #24c8f0, #fd57bf); /* Aldatu daiteke */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -298,12 +298,12 @@ li{
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: #3883ff; /* Make view details get color like the navigation words when clicked */
+    color:#fd57bf; /* Make view details get color like the navigation words when clicked */
     transition: color 650ms;
 }
 
 .projects-description .cta:hover{
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, #24c8f0,#24c8f0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -318,14 +318,14 @@ li{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
-    opacity: .3;
+    opacity: .65;
 }
 /*End projects*/
 /* -------------------------------------------------------EDUCATION---------------------------------------------------------- */
 
 /*Start education timeline*/
 .education ul{
-    border-left: 4px solid #ffe838; /* Maybe change the colors to those pink/yellow or new combination */
+    border-left: 4px solid #24c8f0; 
     border-radius: .8rem;
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;
@@ -341,7 +341,10 @@ li{
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 1rem;
-    opacity: .3; /* Maybe change opacities */
+}
+
+.education p{
+    opacity: .65; 
 }
 
 .education .date{
@@ -377,7 +380,7 @@ li{
     content: '';
     box-shadow: 0 0 0 4px #fd57bf;
     border-radius: 100%;
-    left: -7.9rem;
+    left: -7.93rem;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #313531;
@@ -411,15 +414,15 @@ li{
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px solid #ffe838; /* Aldatu daiteke */
-    background-color: #fd57bf; /* Aldatu daiteke */
+    border: 3px solid #24c8f0; 
+    background-color: #fd57bf;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 
 .icon-container i{
-    color: #ffe838;
+    color: #000000;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -429,7 +432,7 @@ li{
 
 /*Start contact*/
 .contact{
-    background-color: #221e3f
+    background-color: #000000
 }
 
 form{
@@ -454,7 +457,7 @@ textarea{
 input[type="submit"]{
     width: initial;
     background-color: #fd57bf;
-    color: #eee;
+    color: #ffffff;
     padding: 1rem 2rem;
     border-radius: .8rem;
     cursor: pointer;
@@ -462,8 +465,8 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    color: #221e3f;
-    background-color: #ffe838;
+    color: #000000;
+    background-color: #24c8f0;
 }
 /*End contact*/
 /* --------------------------------------------------------FOOTER------------------------------------------------------------ */
@@ -472,7 +475,7 @@ input[type="submit"]:hover{
 .copyright{
     width: 100%;
     text-align: center;
-    background-color: #16162d;
+    background-color: #000000;
     padding: 2rem 0;
     position: relative;
 }
@@ -490,9 +493,10 @@ input[type="submit"]:hover{
 }
 
 .up i{
-    color: #16162d;
+    color: #000000;
     font-size: 2rem;
     margin: auto;
+    cursor: pointer;
 }
 
 .copyright p{
@@ -517,4 +521,124 @@ input[type="submit"]:hover{
 /* ---------------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
 
 /*Start media queries*/
+@media screen and (max-width: 768px) {
+    body{
+        background: url("images/Background2.jpg") no-repeat center fixed; /* Aldatu daiteke */
+        background-size: cover;
+    }
+
+    .landing-text h1{
+        font-size: 15rem;
+    }
+
+    .landing-text h6{
+        font-size: 1.7rem;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    li{
+        margin: 2rem 0;
+    }
+
+    .nav-link{
+        font-size: 4.5rem;
+    }
+
+    .about-heading h1{
+        font-size: 8rem;
+    }
+
+    .section-heading h1{
+        font-size: 3rem;
+    }
+
+    .about-details .nav-list{
+        flex-direction: initial;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+
+    .icon-container{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .icon-container i{
+        font-size: 4rem;
+    }
+
+    .education ul{
+        margin: 0 0 0 auto;
+    }
+
+    .education .date::before{
+        left: -21rem;
+    }
+
+    .education .date::after{
+        left: -5.955rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .landing-text h1{
+        font-size: 8rem;
+    }
+
+    .landing-text h6{
+        font-size: 1.4rem;
+    }
+
+    .nav-link{
+        font-size: 3.5rem;
+    }
+
+    .about .container{
+        flex-direction: column;
+    }
+
+    .profile-img{
+        margin: 0 0 7rem 0;
+    }
+
+    .projects-item{
+        flex-direction: column;
+    }
+
+    .projects-img{
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+
+    .projects-description{
+        margin: 0;
+        order: 2;
+    }
+
+    .education p{
+        font-size: 1.6;
+    }
+
+    .education .date::before{
+        font-size: 1.4rem;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .up{
+        right: 2rem;
+    }
+}
 /*End media queries*/
