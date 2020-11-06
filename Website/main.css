@@ -323,8 +323,12 @@ li{
     color: #663a82;
 }
 
-.fa-file:hover{
-    color: #fd57bf;
+.fa-file-pdf i{
+    font-size: 50rem;
+}
+
+.fa-file-pdf:hover{
+    color: #ff0000;
 }
 
 /*End about*/
@@ -469,15 +473,15 @@ li{
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px solid #24c8f0; 
-    background-color: #fd57bf;
+    border: 3px solid #fd57bf;  
+    background-color: #000000;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 
 .icon-container i{
-    color: #000000;
+    color: #24c8f0; 
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
