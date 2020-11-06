@@ -1,6 +1,6 @@
 /* Followed: https://www.youtube.com/watch?v=T7PnWnTgusc&t=1089s&ab_channel=JulioCodes */
-/* -----------------------------------------------------GLOBAL--------------------------------------------------------------- */
 
+/* -----------------------------------------------------GLOBAL--------------------------------------------------------------- */
 /*Start global*/
 *{
     margin: 0;
@@ -10,7 +10,7 @@
 
 html{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif; /*ALDATU*/
+    font-family: 'Roboto', sans-serif;
     color: #eee;
 }
 
@@ -39,8 +39,8 @@ img{
     width: 100%;   
 }
 /*End global*/
-/* ----------------------------------------------------REUSABLE---------------------------------------------------------------- */
 
+/* ----------------------------------------------------REUSABLE---------------------------------------------------------------- */
 /*Start reusable*/
 .container{
     width: 90%;
@@ -58,9 +58,13 @@ img{
 .section-heading h1{
     font-size: 3.5rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 300;
     position: relative;
     margin-bottom: 1rem;
+    font-family: 'Permanent Marker', cursive; 
+    background: linear-gradient(to top, #24c8f0, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-heading h1::before,
@@ -96,8 +100,53 @@ img{
     margin-right: 5rem;
 }
 /*End reusable*/
-/* -----------------------------------------------------HEADER--------------------------------------------------------------- */
 
+/* ----------------------------------------------------WRAPPER---------------------------------------------------------------- */
+/*Start wrapper*/
+.wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+
+path {
+    stroke: #fff; 
+    fill: url(#MyGradient);
+    stroke-dasharray: 1500;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0,0.23,1,.1);
+}
+
+@keyframes animate{
+    0% {
+        opacity: 0;
+        fill: none; 
+        stroke-dashoffset: 1500;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none; 
+        stroke-dashoffset: 1500;
+    }
+
+    90% {
+        fill: rgba(255, 255, 255, 0); 
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1); 
+        stroke-dashoffset: 0;
+    }
+
+}
+
+/*End wrapper*/
+
+/* -----------------------------------------------------HEADER--------------------------------------------------------------- */
 /*Start header*/
 header{
     width: 100%;
@@ -131,8 +180,7 @@ li{
 }
 
 .nav-link{
-    font-family: 'Dancing Script', cursive; /* CHANGE */
-    /* https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing */
+    font-family: 'Permanent Marker', cursive; 
     font-size: 5rem;
     padding: 1rem;
 }
@@ -208,8 +256,8 @@ li{
 }
 
 .landing-text h1{
-    font-size: 20rem;
-    font-family: 'Dancing Script', cursive; /* CHANGE */
+    font-size: 17rem;
+    font-family: 'Permanent Marker', cursive; 
     background: linear-gradient(to top, #24c8f0, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -222,8 +270,8 @@ li{
     font-weight: 600;
 }
 /*End header*/
-/* ------------------------------------------------------ABOUT-------------------------------------------------------------- */
 
+/* ------------------------------------------------------ABOUT-------------------------------------------------------------- */
 /*Start about*/
 .about .container{
     display: flex;
@@ -241,6 +289,7 @@ li{
 .about-heading h1{
     font-size: 10rem;
     opacity: .3;
+    font-family: 'Permanent Marker', cursive; 
 }
 
 .about-heading h6{
@@ -273,9 +322,14 @@ li{
 .fa-github:hover{
     color: #663a82;
 }
-/*End about*/
-/* -------------------------------------------------------PROJECTS----------------------------------------------------------- */
 
+.fa-file:hover{
+    color: #fd57bf;
+}
+
+/*End about*/
+
+/* -------------------------------------------------------PROJECTS----------------------------------------------------------- */
 /*Start projects*/
 .projects-item{
     display: flex;
@@ -322,8 +376,8 @@ li{
     opacity: .65;
 }
 /*End projects*/
-/* -------------------------------------------------------EDUCATION---------------------------------------------------------- */
 
+/* -------------------------------------------------------EDUCATION---------------------------------------------------------- */
 /*Start education timeline*/
 .education ul{
     border-left: 4px solid #24c8f0; 
@@ -387,8 +441,8 @@ li{
     background-color: #313531;
 }
 /*End education timeline*/
-/* --------------------------------------------------------SKILLS------------------------------------------------------------ */
 
+/* --------------------------------------------------------SKILLS------------------------------------------------------------ */
 /*Start skills*/
 .my-skills{
     margin-top: 10rem;
@@ -429,8 +483,8 @@ li{
     transform: rotate(-45deg);
 }
 /*End skills*/
-/* --------------------------------------------------------CONTACT---------------------------------------------------------- */
 
+/* --------------------------------------------------------CONTACT---------------------------------------------------------- */
 /*Start contact*/
 .contact{
     background-color: #000000
@@ -470,8 +524,8 @@ input[type="submit"]:hover{
     background-color: #24c8f0;
 }
 /*End contact*/
-/* --------------------------------------------------------FOOTER------------------------------------------------------------ */
 
+/* --------------------------------------------------------FOOTER------------------------------------------------------------ */
 /*Start footer*/
 .copyright{
     width: 100%;
@@ -504,8 +558,8 @@ input[type="submit"]:hover{
     font-size: 1.4rem;
 }
 /*End footer*/
-/* -------------------------------------------------------ANIMATIONS--------------------------------------------------------- */
 
+/* -------------------------------------------------------ANIMATIONS--------------------------------------------------------- */
 /*Start animations*/
 @keyframes pulse{
     0%{
@@ -519,8 +573,8 @@ input[type="submit"]:hover{
     }
 }
 /*End animations*/
-/* ---------------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
 
+/* ---------------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
 /*Start media queries*/
 @media screen and (max-width: 768px) {
     body{
