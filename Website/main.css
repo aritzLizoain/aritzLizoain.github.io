@@ -10,14 +10,14 @@
 
 html{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif; /* Aldatu daiteke */
-    color: #eee; /* Aldatu daiteke */
+    font-family: 'Roboto', sans-serif; /*ALDATU*/
+    color: #eee;
 }
 
 body{
     width: 100%;
     height: 100%;
-    background: url("images/Background.jpg") no-repeat center fixed; /* Aldatu daiteke */
+    background: url("images/Background.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -57,9 +57,8 @@ img{
 
 .section-heading h1{
     font-size: 3.5rem;
-    color: rgba(255,255,255, .3);
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 600;
     position: relative;
     margin-bottom: 1rem;
 }
@@ -89,7 +88,8 @@ img{
 
 .section-heading h6{
     font-size: 1.6rem;
-    font-weight: 300;
+    color: rgba(255,255,255, .6);
+    font-weight: 400;
 }
 
 .has-margin-right{
@@ -110,10 +110,11 @@ header{
     position: fixed;
     top: -100vh;
     z-index: 50;
-    background-color: #16162d; /* Aldatu daiteke */
+    background-color: #000000;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1,0,0,1);
+    opacity: .95;
 }
 
 .nav-list{
@@ -130,7 +131,7 @@ li{
 }
 
 .nav-link{
-    font-family: 'Dancing Script', cursive; /* Aldatu daiteke */
+    font-family: 'Dancing Script', cursive; /* CHANGE */
     /* https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing */
     font-size: 5rem;
     padding: 1rem;
@@ -138,7 +139,7 @@ li{
 
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(to top, #24c8f0, #fd57bf); /* Aldatu daiteke */
+    background: linear-gradient(to top, #24c8f0, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -167,10 +168,10 @@ li{
 }
 
 .bar{
-    background: linear-gradient(to right, #24c8f0, #fd57bf); /* Aldatu daiteke */
+    background: linear-gradient(to right, #24c8f0, #fd57bf);
     width: 100%;
-    height: 4px; /* Aldatu daiteke */
-    border-radius: .8rem; /* Aldatu daiteke */
+    height: 5px; 
+    border-radius: .8rem; 
 }
 
 .bar.half{
@@ -207,9 +208,9 @@ li{
 }
 
 .landing-text h1{
-    font-size: 20rem; /* Aldatu daiteke */
-    font-family: 'Dancing Script', cursive; /* Aldatu daiteke */
-    background: linear-gradient(to top, #24c8f0, #fd57bf); /* Aldatu daiteke */
+    font-size: 20rem;
+    font-family: 'Dancing Script', cursive; /* CHANGE */
+    background: linear-gradient(to top, #24c8f0, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -217,8 +218,8 @@ li{
 }
 
 .landing-text h6{
-    font-size: 2rem; /* Aldatu daiteke */
-    font-weight: 600; /* Aldatu daiteke */
+    font-size: 2rem;
+    font-weight: 600;
 }
 /*End header*/
 /* ------------------------------------------------------ABOUT-------------------------------------------------------------- */
@@ -238,13 +239,13 @@ li{
 }
 
 .about-heading h1{
-    font-size: 10rem; /* Aldatu daiteke */
-    opacity: .3; /* Aldatu daiteke */
+    font-size: 10rem;
+    opacity: .3;
 }
 
 .about-heading h6{
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 3000;
 }
 
 .profile-img{
@@ -270,7 +271,7 @@ li{
 }
 
 .fa-github:hover{
-    color:#6e5494;
+    color: #663a82;
 }
 /*End about*/
 /* -------------------------------------------------------PROJECTS----------------------------------------------------------- */
@@ -289,7 +290,7 @@ li{
 }
 
 .profile-img{
-    width: 50rem; /* Tamaina aldatu dezaket */
+    width: 50rem;
     flex: 1;
 }
 
@@ -298,7 +299,7 @@ li{
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color:#fd57bf; /* Make view details get color like the navigation words when clicked */
+    color:#fd57bf;
     transition: color 650ms;
 }
 
@@ -523,7 +524,7 @@ input[type="submit"]:hover{
 /*Start media queries*/
 @media screen and (max-width: 768px) {
     body{
-        background: url("images/Background2.jpg") no-repeat center fixed; /* Aldatu daiteke */
+        background: url("images/Background2.jpg") no-repeat center fixed;
         background-size: cover;
     }
 
