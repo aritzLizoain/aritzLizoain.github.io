@@ -323,15 +323,26 @@ li{
     color: #663a82;
 }
 
-.fa-file-pdf i{
-    font-size: 50rem;
+.cvButton a{
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding: 15px 20px;
+    cursor: pointer;
+    background: linear-gradient(to top,#036077,#6dbccf);
 }
 
-.fa-file-pdf:hover{
-    color: #ff0000;
+.cvButton a:hover{
+    background: linear-gradient(to top,#e01875,#ce6eab);
 }
+
 
 /*End about*/
+
+
 
 /* -------------------------------------------------------PROJECTS----------------------------------------------------------- */
 /*Start projects*/
@@ -357,12 +368,12 @@ li{
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color:#fd57bf;
+    color: #24c8f0;
     transition: color 650ms;
 }
 
 .projects-description .cta:hover{
-    background: linear-gradient(to top, #24c8f0,#24c8f0);
+    background: linear-gradient(to top, #fd57bf,#fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -515,8 +526,8 @@ textarea{
 
 input[type="submit"]{
     width: initial;
-    background-color: #fd57bf;
-    color: #ffffff;
+    background-color: #24c8f0;
+    color: #000000;
     padding: 1rem 2rem;
     border-radius: .8rem;
     cursor: pointer;
@@ -524,8 +535,8 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    color: #000000;
-    background-color: #24c8f0;
+    color: #ffffff;
+    background-color: #fd57bf; 
 }
 /*End contact*/
 
