@@ -323,21 +323,62 @@ li{
     color: #663a82;
 }
 
-.cvButton a{
-    font-size: 2rem;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
+button{
+    height: 60px;
+    width: 200px;
+    margin: 0 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
     text-transform: uppercase;
-    border-radius: 40px;
-    padding: 15px 20px;
     cursor: pointer;
-    background: linear-gradient(to top,#036077,#6dbccf);
+    position: relative;
 }
 
-.cvButton a:hover{
-    background: linear-gradient(to top,#e01875,#ce6eab);
+button:hover{
+    background: linear-gradient(90deg, #24c8f0, #fd57bf, #24c8f0); 
+    background-size: 400%;
 }
+
+button::before{
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+button:hover:before{
+    opacity: 1;
+    z-index: -1;
+}
+
+button:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+
+/* try changing things, and also combine with the other button settings */
 
 
 /*End about*/
