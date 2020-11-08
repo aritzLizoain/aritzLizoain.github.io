@@ -451,7 +451,7 @@ button:hover{
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .education h6{
