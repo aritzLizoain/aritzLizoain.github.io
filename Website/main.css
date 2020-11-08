@@ -116,10 +116,10 @@ path {
     fill: url(#MyGradient);
     stroke-dasharray: 1500;
     opacity: 10;
-    animation: animate 3s cubic-bezier(0,0.23,1,.1);
+    animation: animate0 3s cubic-bezier(0,0.23,1,.1);
 }
 
-@keyframes animate{
+@keyframes animate0{
     0% {
         opacity: 0;
         fill: none; 
@@ -375,15 +375,7 @@ button:hover{
         background-position: 400%;
     }
 }
-
-
-
-/* try changing things, and also combine with the other button settings */
-
-
 /*End about*/
-
-
 
 /* -------------------------------------------------------PROJECTS----------------------------------------------------------- */
 /*Start projects*/
@@ -542,10 +534,10 @@ button:hover{
     background-size: 80%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255,255,255,.2);
-    animation: animate 1.8s linear infinite;
+    animation: animate1 1.8s linear infinite;
 }
 
-@keyframes animate{
+@keyframes animate1{
     0%{
         background-position: -500%;
     }
@@ -599,10 +591,10 @@ button:hover{
     background-size: 80%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255,255,255,.2);
-    animation: animate 1.8s linear infinite;
+    animation: animate2 1.8s linear infinite;
 }
 
-@keyframes animate{
+@keyframes animate2{
     0%{
         background-position: -500%;
     }
