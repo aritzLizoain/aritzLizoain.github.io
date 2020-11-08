@@ -181,7 +181,7 @@ li{
 
 .nav-link{
     font-family: 'Permanent Marker', cursive; 
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 1rem;
 }
 
@@ -503,7 +503,7 @@ button:hover{
 .my-skills{
     margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     grid-gap: 2.5rem;
     text-align: center;
 }
@@ -554,6 +554,63 @@ button:hover{
     transform: rotate(-45deg);
 }
 /*End skills*/
+
+/* --------------------------------------------------------LANGUAGES------------------------------------------------------------ */
+/*Start languages*/
+.my-languages{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    grid-gap: 2.5rem;
+    text-align: center;
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.language h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,.2);
+    animation: animate 1.8s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
+
+.language-icon-container{
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid #fd57bf;  
+    background-color: #000000;
+    margin-bottom: 2rem;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+.language-icon-container i{
+    color: #24c8f0; 
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(-45deg);
+}
+/*End languages*/
 
 /* --------------------------------------------------------CONTACT---------------------------------------------------------- */
 /*Start contact*/
@@ -695,6 +752,15 @@ input[type="submit"]:hover{
     }
 
     .icon-container i{
+        font-size: 4rem;
+    }
+
+    .language-icon-container{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .language-icon-container i{
         font-size: 4rem;
     }
 
