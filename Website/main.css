@@ -1,4 +1,4 @@
-/* Followed: https://www.youtube.com/watch?v=T7PnWnTgusc&t=1089s&ab_channel=JulioCodes */
+/* Mainly followed: https://www.youtube.com/watch?v=T7PnWnTgusc&t=1089s&ab_channel=JulioCodes */
 
 /* -----------------------------------------------------GLOBAL--------------------------------------------------------------- */
 /*Start global*/
@@ -74,7 +74,7 @@ img{
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.9);
 }
 
 .section-heading h1::before{
@@ -331,7 +331,7 @@ button{
     border: none;
     outline: none;
     background: #111;
-    color: #fff;
+    color: #eee;
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
@@ -450,19 +450,25 @@ button:hover{
 .education h1{
     font-size: 2rem;
     text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.education h6{
+    font-size: 1.7rem;
     font-weight: 300;
     margin-bottom: 1rem;
 }
 
 .education p{
-    opacity: .65; 
+    opacity: .8; 
 }
 
 .education .date{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .education .date:last-of-type{
@@ -480,11 +486,18 @@ button:hover{
 }
 
 .education .date::before{
-    content: attr(data-date);
-    left: -21rem;
+    left: -23.5rem;
+    text-align: right;
+    min-width: 14rem;
+    font-size: 1.7rem;
+    content: attr(data-date) '\A' attr(location);
+    white-space:pre;
+}
+
+.education .location{
+    position: relative;
     text-align: right;
     min-width: 12rem;
-    font-size: 1.5rem;
 }
 
 .education .date::after{
@@ -495,6 +508,10 @@ button:hover{
     height: 1.5rem;
     width: 1.5rem;
     background-color: #313531;
+}
+
+.education .date a{
+    left: -30rem;
 }
 /*End education timeline*/
 
@@ -769,7 +786,7 @@ input[type="submit"]:hover{
     }
 
     .education .date::before{
-        left: -21rem;
+        left: -21.5rem;
     }
 
     .education .date::after{
@@ -819,6 +836,10 @@ input[type="submit"]:hover{
 
     .education p{
         font-size: 1.6;
+    }
+
+    .education .date::before{
+        left: -21.5rem;
     }
 
     .education .date::before{
