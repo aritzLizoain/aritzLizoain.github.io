@@ -3,6 +3,12 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/aritzLizoain/Website-and-CV?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/aritzLizoain/Website-and-CV?style=social)
 
-[comment]: <> (# About CV)
-[comment]: <> (# About Website)
-[comment]: <> (Screenshots of website)
+# Computer view
+<p align="center">
+<img src="https://github.com/aritzLizoain/How-fast-can-you-run/blob/main/Output/Progression.gif"/>
+</p>
+
+# Phone view
+<p align="center">
+<img src="https://github.com/aritzLizoain/How-fast-can-you-run/blob/main/Output/Progression.gif"/>
+</p>
