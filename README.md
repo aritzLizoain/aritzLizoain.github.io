@@ -3,12 +3,12 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/aritzLizoain/Website-and-CV?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/aritzLizoain/Website-and-CV?style=social)
 
-# Computer view
+# Desktop
 <p align="center">
-<img src="https://github.com/aritzLizoain/How-fast-can-you-run/blob/main/Output/Progression.gif"/>
+<img src="https://github.com/aritzLizoain/Website-and-CV/blob/main/Website/images/Desktop.gif"/>
 </p>
 
-# Phone view
+# Mobile
 <p align="center">
-<img src="https://github.com/aritzLizoain/How-fast-can-you-run/blob/main/Output/Progression.gif"/>
+<img src="https://github.com/aritzLizoain/Website-and-CV/blob/main/Website/images/Mobile.gif"/>
 </p>
