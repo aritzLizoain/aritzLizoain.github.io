@@ -300,6 +300,8 @@ li{
 .profile-img{
     flex: 1;
     margin-right: 5rem;
+    height: auto;
+    width: 25rem;
 }
 
 .about-details{
@@ -383,16 +385,18 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
-
+    margin-bottom: 10rem;
 }
 
 .projects-item:last-child{
     margin-bottom: 0;
 }
 
-.profile-img{
-    width: 50rem;
+.projects-img{
+    flex: 1;
+}
+
+.projects-description{
     flex: 1;
 }
 
@@ -846,4 +850,5 @@ input[type="submit"]:hover{
         right: 2rem;
     }
 }
+
 /*End media queries*/
