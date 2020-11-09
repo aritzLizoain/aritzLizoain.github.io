@@ -283,7 +283,7 @@ li{
     text-align: center;
     text-transform: uppercase;  
     line-height: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 15rem;
 }
 
 .about-heading h1{
@@ -295,6 +295,10 @@ li{
 .about-heading h6{
     font-size: 2rem;
     font-weight: 3000;
+}
+
+.about p{
+    font-weight: 300;
 }
 
 .profile-img{
@@ -309,7 +313,7 @@ li{
 }
 
 .social-media{
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 .social-media i{
