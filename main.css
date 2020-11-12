@@ -299,7 +299,6 @@ li{
 
 .about p{
     font-weight: 300;
-    /*flex: 1;*/
     margin-left: 20px;
     margin-right: 10px;
 }
@@ -735,6 +734,10 @@ input[type="submit"]:hover{
     .nav-link{
         font-size: 2rem;
     }
+
+    .about-heading{
+        margin-bottom: 10rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -763,8 +766,18 @@ input[type="submit"]:hover{
         font-size: 3.5rem;
     }
 
+    .about-heading{
+        margin-bottom: 7rem;
+    }
+
     .about-heading h1{
         font-size: 8rem;
+    }
+
+    .about p{
+        margin-left: 20px;
+        margin-right: 10px;
+        flex: 1;
     }
 
     .section-heading h1{
@@ -797,10 +810,6 @@ input[type="submit"]:hover{
         font-size: 4rem;
     }
 
-    .education ul{
-        margin: 0 0 0 auto;
-    }
-
     .education .date::before{
         left: -21.5rem;
     }
@@ -808,6 +817,15 @@ input[type="submit"]:hover{
     .education .date::after{
         left: -5.955rem;
     }
+    
+    .education h6{
+        margin-right: -1rem;
+    }
+
+    .education ul{
+        margin: 0 17rem;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -832,6 +850,12 @@ input[type="submit"]:hover{
         flex-direction: column;
     }
 
+    .about p{
+        margin-left: 20px;
+        margin-right: 10px;
+        flex: 1;
+    }
+
     .profile-img{
         margin: 0 0 7rem 0;
     }
@@ -852,6 +876,7 @@ input[type="submit"]:hover{
 
     .education p{
         font-size: 1.6;
+        margin-right: -1rem;
     }
 
     .education .date::before{
@@ -860,6 +885,18 @@ input[type="submit"]:hover{
 
     .education .date::before{
         font-size: 1.4rem;
+    }
+
+    .education h6{
+        margin-right: -1rem;
+    }
+
+    .education h1{
+        margin-right: -1rem;
+    }
+
+    .education ul{
+        margin: 0 13rem;
     }
 
     form{
