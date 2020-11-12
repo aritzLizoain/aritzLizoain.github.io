@@ -5,10 +5,10 @@
 
 # Desktop
 <p align="center">
-<img src="https://github.com/aritzLizoain/Website-and-CV/blob/main/Website/images/Desktop.gif"/>
+<img src="https://github.com/aritzLizoain/aritzLizoain.github.io/blob/main/images/Desktop.gif"/>
 </p>
 
 # Mobile
 <p align="center">
-<img src="https://github.com/aritzLizoain/Website-and-CV/blob/main/Website/images/Mobile.gif"/>
+<img src="https://github.com/aritzLizoain/aritzLizoain.github.io/blob/main/images/Mobile.gif"/>
 </p>
