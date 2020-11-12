@@ -727,6 +727,13 @@ input[type="submit"]:hover{
 
 /* ---------------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
 /*Start media queries*/
+
+@media screen and (max-width: 1267px) {
+    .nav-link{
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body{
         background: url("images/Background2.jpg") no-repeat center fixed;
