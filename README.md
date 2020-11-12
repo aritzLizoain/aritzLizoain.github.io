@@ -3,6 +3,8 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/aritzLizoain/aritzLizoain.github.io?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/aritzLizoain/aritzLizoain.github.io?style=social)
 
+[Link to the website](https://aritzlizoain.github.io/)
+
 # Desktop
 <p align="center">
 <img src="https://github.com/aritzLizoain/aritzLizoain.github.io/blob/main/images/Desktop.gif"/>
