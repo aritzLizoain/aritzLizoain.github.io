@@ -176,7 +176,7 @@ header{
 }
 
 li{
-    margin: 0 2rem;
+    margin: 0 0.5rem;
 }
 
 .nav-link{
@@ -740,11 +740,11 @@ input[type="submit"]:hover{
     }
 
     li{
-        margin: 2rem 0;
+        margin: 0.5rem 0rem;
     }
 
     .nav-link{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 
     .about-heading h1{
@@ -760,7 +760,7 @@ input[type="submit"]:hover{
     }
 
     .about-details li{
-        margin: 0 2rem;
+        margin: 0rem 0rem;
     }
 
     .icon-container{
