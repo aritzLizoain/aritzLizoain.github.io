@@ -299,8 +299,8 @@ li{
 
 .about p{
     font-weight: 300;
-    flex: 1;
-    margin-left: 10px;
+    /*flex: 1;*/
+    margin-left: 20px;
     margin-right: 10px;
 }
 
@@ -337,7 +337,7 @@ li{
 button{
     height: 60px;
     width: 200px;
-    margin: 0 15px;
+    margin: 0 10px;
     border-radius: 50px;
     border: none;
     outline: none;
@@ -444,7 +444,7 @@ button:hover{
     border-left: 4px solid #24c8f0; 
     border-radius: .8rem;
     background-color: rgba(0, 0, 0, 0.05);
-    margin: 0 auto;
+    margin: 0 25rem;
     position: relative;
     padding: 5rem;
     list-style-type: none;
@@ -457,16 +457,19 @@ button:hover{
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 0.5rem;
+    margin-right: -5rem;
 }
 
 .education h6{
     font-size: 1.7rem;
     font-weight: 300;
     margin-bottom: 1rem;
+    margin-right: -5rem;
 }
 
 .education p{
     opacity: .8; 
+    margin-right: -5rem;
 }
 
 .education .date{
@@ -510,7 +513,7 @@ button:hover{
     content: '';
     box-shadow: 0 0 0 4px #fd57bf;
     border-radius: 100%;
-    left: -7.93rem;
+    left: -6.45rem;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #313531;
