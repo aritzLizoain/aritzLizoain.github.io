@@ -300,6 +300,8 @@ li{
 .about p{
     font-weight: 300;
     flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .profile-img{
@@ -315,11 +317,13 @@ li{
 
 .social-media{
     margin-top: 6rem;
+    margin-left: 15px;
 }
 
 .social-media i{
     font-size: 5rem;
     transition: color 650ms;
+    margin-right: 2rem;
 }
 
 .fa-linkedin-in:hover{
@@ -333,7 +337,7 @@ li{
 button{
     height: 60px;
     width: 200px;
-    margin: 0 35px;
+    margin: 0 15px;
     border-radius: 50px;
     border: none;
     outline: none;
