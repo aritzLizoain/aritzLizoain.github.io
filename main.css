@@ -299,6 +299,7 @@ li{
 
 .about p{
     font-weight: 300;
+    flex: 1;
 }
 
 .profile-img{
@@ -498,6 +499,7 @@ button:hover{
     position: relative;
     text-align: right;
     min-width: 12rem;
+    flex: 1;
 }
 
 .education .date::after{
