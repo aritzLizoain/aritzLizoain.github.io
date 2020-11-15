@@ -1,4 +1,14 @@
-// Followed: https://www.youtube.com/watch?v=T7PnWnTgusc&t=1089s&ab_channel=JulioCodes
+//////////////////////////////////////////////////////////////////////////////////////////
+// Original authors: https://www.youtube.com/watch?v=T7PnWnTgusc&t=1089s&ab_channel=JulioCodes 
+//                   https://www.youtube.com/watch?v=y0Ic8QcvyK8&ab_channel=Codegrid
+//                   https://www.youtube.com/watch?v=vc9rgFHr098&list=WL&index=2&ab_channel=WEBCIFAR
+// Modified by: Aritz Lizoain
+// Github: https://github.com/aritzLizoain
+// My personal website: https://aritzlizoain.github.io/
+// Description: Personal website
+// Copyright 2020, Aritz Lizoain.
+// License: MIT License
+//////////////////////////////////////////////////////////////////////////////////////////
 
 $(document).ready(function () {
 
