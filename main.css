@@ -313,6 +313,14 @@ li{
     margin-right: 20px;
 }
 
+.about z{
+    font-weight: 300;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.25rem;
+    color: #24c7f080;
+}
+
 .profile-img{
     flex: 1;
     margin-right: 5rem;
