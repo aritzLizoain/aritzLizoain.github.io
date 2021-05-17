@@ -3,11 +3,8 @@
 % This template has been downloaded from: http://www.LaTeXTemplates.com
 % Original author: Rishi Shah 
 % Modified by: Aritz Lizoain
-% Github: https://github.com/aritzLizoain
-% My personal website: https://aritzlizoain.github.io/
-% Copyright 2020, Aritz Lizoain.
-% License: MIT License
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %---------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %---------------------------------------------------------------------------------
@@ -22,11 +19,31 @@
 % Hyphenation settings 
 \hyphenpenalty=10000 
 % Document margins
-\usepackage[left=0.6in,top=0.7in,right=0.65in,bottom=0.7in]{geometry} 
+\usepackage[left=0.53in,top=1in,right=0.53in,bottom=0.7in]{geometry}
+% New commands
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+% Text color
+\usepackage[usenames,dvipsnames]{xcolor}
+% Create new color
+\definecolor{lightGreen}{RGB}{185,255,110}
+% rSection style
+\renewenvironment{rSection}[1]{
+\sectionskip
+\vspace{-3.5pt}
+\colorbox{lightGreen}{\hspace{-3pt}\MakeUppercase{\large{\textbf{#1}}}}
+\vspace{3pt}
+\hrule
+\hrule
+\hrule
+\begin{list}{}{
+\setlength{\leftmargin}{1.5em}
+}
+\item[]
+}{
+\end{list}
+}
 % Links
-\usepackage{xcolor}
 \usepackage[colorlinks = true,
             linkcolor = blue,
             urlcolor  = blue,
@@ -43,185 +60,240 @@
 \setlength{\parindent}{0pt}
 % Inserting images
 \usepackage{graphicx}
+% Dotted line
+\usepackage{tikz}
 % Inserting images on specific position on the page
 \usepackage{tikzpagenodes}
-% Inserting icons (GitHub icon)
+% Inserting icons (GitHub, phone, LinkedIn, email icons)
 \usepackage{fontawesome} 
 % Change the margin
 \usepackage{changepage}
 % Enumerate
 \usepackage{enumitem}
-
+% Author email
+\newcommand*{\Authoremail}{Xxxxxxx@xxxxx.xxx}
+% Change itemize sub-bullet style to a small empty circle
+\renewcommand{\labelitemii}{\small$\circ$}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
+
+% Respect margins
+\sloppy
 
 %---------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %---------------------------------------------------------------------------------
-\vspace{-0.85in}
+\vspace{-1.05in}
 % Personal info
-\textbf{Name Lastname} \newline
-Date of Birth: 00.00.0000 \newline
-Nationality: - \newline
-E-mail: myemail@mail.com \newline
-Phone number: (\Plus 00) 00 000 00 00
-\vspace{-25pt}
+% Name, lastname and nationality
+\textbf{\LARGE{Aritz Lizoain}} \hspace*{84pt} Nationality: Xxxxxxx 
 
+% Email and date of birth
+\href{mailto:\Authoremail}{\faicon{envelope} \Authoremail} \hspace*{70pt} Date of Birth: XX.XX.XXXX 
+
+% Linkedin and phone number
+{\href{https://linkedin.com/in/aritz-lizoain}{\faicon{linkedin-square} linkedin.com/in/aritz-lizoain}} \hspace*{46pt} \faicon{phone} (\Plus XX) XX XXX XX XX (Xxxxxx)
+
+% GitHub and phone number
+{\href{https://github.com/aritzLizoain}{\faicon{github} https://github.com/aritzLizoain}} \hspace*{35.5pt} \faicon{phone} (\Plus XX) XXX XX XX XX (Xxxxxx)  
+
+\vspace*{-20pt}
+  
 % Photo
 \begin{tikzpicture}[remember picture,overlay,shift={(current page.north east)}]
-\node[anchor=north east,xshift=-0.65in,yshift=-0.5cm]{\includegraphics[width=3cm]{photo_reduced.jpg}};
+\node[anchor=north east,xshift=-1.05in,yshift=-0.45in]{\includegraphics[width=3cm]{random_photo.png}};
 \end{tikzpicture}
-\vspace{20pt}
+
+\vspace{12pt}
 
 %---------------------------------------------------------------------------------
 %	EDUCATION
 %---------------------------------------------------------------------------------
 % Section title
-\begin{rSection}{{\large Education}}
-\vspace{2pt}
+\begin{rSection}{Education}
 
-% Education 1 
-% Dates
+% Education 1
 \begin{adjustwidth}{-6mm}{0pt}
-\small{\em{2016 - 2020}}
+\vspace{-5pt}
 \normalsize
-\hspace{5pt}
 % Organization name and location
-{\bf Universidad de Cantabria (UC)} \hfill {\bf Santander, Spain}
-\end{adjustwidth}
+\subsection*{Universidad de Cantabria (UC) \hfill \normalsize{Santander, Spain}}
 \vspace{-7pt}
-% Studies specification
-\begin{adjustwidth}{15mm}{0pt}\textit{Bachelor of Science in Physics}
-\newline
-% Relevant courses
-{\bf Relevant courses: }Advanced Computation, Programming, Numerical Methods, Laboratory Computational Tools, Advanced Experimental Techniques (with honors), Ordinary and Partial Differential Equations, Linear Algebra, Differential and Integral Calculus.
-\newline
-% Relevant topics
-{\bf Relevant topics: }Data processing, numerical analysis, object-oriented programming, probability and statistics, software development.
+% Studies specification and dates 
+\textit{Bachelor of Science in Physics} \hfill Sept 2016 - Sept 2020
 \end{adjustwidth}
+\vspace{-5pt}
+
+% Relevant courses
+\begin{adjustwidth}{-6.5mm}{0pt}
+\begin{itemize}
+    \item Relevant coursework: probability $\&$ statistics, numerical analysis, data processing $\&$ visualization, software engineering principles, object-oriented programming (OOP), data structures $\&$ algorithms, linear algebra, multivariable calculus.
+\end{itemize}
+\end{adjustwidth}
+
+% Dotted line
+\vspace{-10pt}
+\begin{tikzpicture}
+\hspace{-16pt}\draw [loosely dotted] (0,0) -- (18.9,0);
+\end{tikzpicture}
+\vspace{-22pt}
 
 % Education 2
-% Dates
 \begin{adjustwidth}{-6mm}{0pt}
-\small{\em{2018 - 2019}}
+\vspace{-5pt}
 \normalsize
-\hspace{5pt}
 % Organization name and location
-{\bf Universit{\"a}t Z{\"u}rich (UZH) / Erasmus\Plus} \hfill {\bf Z{\"u}rich, Switzerland}
-\end{adjustwidth}
+\subsection*{Universit{\"a}t Z{\"u}rich (UZH) \hfill \normalsize{Z{\"u}rich, Switzerland}}
 \vspace{-7pt}
-% Studies specification
-\begin{adjustwidth}{15mm}{0pt}\textit{Bachelor of Science in Physics}
-\newline
-% Relevant courses
-{\bf Relevant courses: }Statistical Mechanics and Molecular Simulations.
+% Studies specification and dates
+\textit{Bachelor of Science in Physics / Erasmus\Plus} \hfill Sept 2018 - Sept 2019
 \end{adjustwidth}
+\vspace{-5pt}
+
+% Relevant courses
+\begin{adjustwidth}{-6.5mm}{0pt}
+\begin{itemize}
+    \item Relevant coursework: statistical mechanics, molecular dynamics.
+\end{itemize}
+\end{adjustwidth}
+
 \end{rSection}
 
 %---------------------------------------------------------------------------------
-%	EXPERIENCE & PROJECTS
+%	PROFESSIONAL EXPERIENCE
 %---------------------------------------------------------------------------------
+\vspace{2pt}
 % Section title
-\begin{rSection}{\large{Experience \& Projects {\href{https://github.com/aritzLizoain}{\faicon{github}}}}}
+\begin{rSection}{Professional Experience}
 
-% Project 1
+% Internship
 \begin{adjustwidth}{-6mm}{0pt}
-\vspace{-8pt}
-% Project name
- \subsection*{\href{https://github.com/aritzLizoain/CNN-Image-segmentation}{CNN Image segmentation}}
-\vspace{-8pt}
-% Project duration
-\textit{Duration: 7 months}
+\vspace{-5pt}
+% Position and location
+\subsection*{Machine Learning Engineer \hfill \normalsize{St. Gallen, Switzerland}}
+\vspace{-7pt}
+% Company and dates
+\textit{Cheque - Der intelligente Cloudspeicher} \hfill Nov 2020 - May 2021
+\end{adjustwidth}
+\begin{adjustwidth}{-6.5mm}{0pt}
+
+% Project details
+\begin{itemize}
+
+    % Overview
+    \item Researched state-of-the-art machine learning implementations in Python, in addition to performing data wrangling and feature engineering to develop a document management mobile application in a fintech start-up.
+    
+    % Technical 1 (Computer Vision)
+    \item Employed transfer and ensemble learning in object detection models trained on self-annotated images for multidomain document layout analysis focused on legal and financial records (e.g. contracts, invoices).
+    
+    % Sub bullet    
+    \begin{itemize}
+    \vspace{-5pt}
+        % Used libraries/methods
+        \item Libraries: Detectron2, TensorFlow, PyTorch, YOLOv5, LayoutLM.
+    \end{itemize}
+
+    % Technical 2 (NLP)
+    \item Achieved above 97$\%$ accuracy in text classification by applying text mining and natural language processing (NLP) techniques (e.g. keyword extraction, topic modeling) to unstructured data in English and German.
+    
+    % Sub bullet  
+    \begin{itemize}
+    \vspace{-5pt}
+        %Used libraries/methods
+        \item Libraries $\&$ methods: NLTK, scikit-learn, BERT, Gensim, spaCy, support-vector machine (SVM), Naive Bayes.
+    \end{itemize}
+   
+    % Impact
+    \item Held 2-4 meetings per week with the founder to analyze business cases and brainstorm technical solutions to customer needs, such as reducing by 90$\%$ the data required for training a reliable object detection model.
+    
+\end{itemize}
+\end{adjustwidth}
+
+% Dotted line
+\vspace{-10pt}
+\begin{tikzpicture}
+\hspace{-16pt}\draw [loosely dotted] (0,0) -- (18.9,0);
+\end{tikzpicture}
+\vspace{-22pt}
+
+% Bachelor thesis
+\begin{adjustwidth}{-6mm}{0pt}
+\vspace{-5pt}
+% Title and location
+\subsection*{\href{https://github.com/aritzLizoain/CNN-Image-segmentation}{Search for dark matter with deep neural networks} \hfill \normalsize{Santander, Spain}}
+\vspace{-7pt}
+% Company and dates
+\textit{Institute of Physics of Cantabria (IFCA)} \hfill Feb 2020 - Sept 2020
 \end{adjustwidth} 
-\begin{adjustwidth}{-3.5mm}{0pt}
+\begin{adjustwidth}{-6.5mm}{0pt}
+
 % Project details
 \begin{itemize}
-    \item Initiated a deep learning implementation focused on dark matter searches.
-    \item Developed a multi-class image segmentation software.
-    \item Pre-processed simulated and real data.
-    \item Built and optimized neural network structures and parameters. 
-    \item Trained and evaluated machine learning models.
-    \item Employed numerous Python packages: TensorFlow, Keras, scikit-learn, OpenCV-Python, scikit-image, Pandas, NumPy, Matplotlib.
-    \item As a result of the obtained exceptional results, earned the opportunity to contribute in the 'DarkMachines' collaboration.
+
+    % Overview
+    \item Pioneeringly discriminated pixel-sized dark matter candidate signals on 16 megapixel particle detector images by designing and implementing an end-to-end image segmentation pipeline for automated data quality monitoring.
+    
+    % Technical
+    \item Built from scratch, trained, optimized (e.g. data augmentation, hyperparameter tuning), and evaluated a Convolutional Neural Network (CNN) with Keras, which achieved a 99$\%$ test accuracy.
+    
+    % Impact
+    \item Obtained a bachelor thesis grade of 9.5/10, and earned the opportunity to present results and contribute to the 'DarkMachines' collaboration.
+    
 \end{itemize}
 \end{adjustwidth}
 
-% Project 2
-\begin{adjustwidth}{-6mm}{0pt}
-\vspace{-8pt}
-% Project name
-\subsection*{MD simulation}
-\vspace{-8pt}
-% Project duration
-\textit{Duration: 5 months}
-\end{adjustwidth}
-\begin{adjustwidth}{-3.5mm}{0pt}
-% Project details
-\begin{itemize}
-    \item Designed and developed a molecular dynamics software in Java, obtaining an outstanding grade in the Advanced Computation course.
-    \item Gained insight in software modeling (UML), computational complexity and algorithmic efficiency.
-    \item Focused on specific customer needs: experience, modularity and performance.
-    \item Established excellent group communication and organization.
-\end{itemize}
-\end{adjustwidth}
 \end{rSection}
 
 %---------------------------------------------------------------------------------
 %	TECHNICAL SKILLS
 %---------------------------------------------------------------------------------
-% Multi-columns: 3 columns
-\begin{multicols}{3}
-\begin{textblock*}{5.8cm}(2.1cm,19.45cm)
+\begin{textblock*}{9.8cm}(1.97cm,19.85cm)
 % Section title
-\begin{rSection}{\large{Technical Skills}}
+\begin{rSection}{Technical Skills}
 \end{rSection}
 \end{textblock*}
+
 % Section details
-\begin{textblock*}{10cm}(2.1cm,20.45cm)
-\begin{itemize}\setlength\itemsep{-4.5pt}
+\begin{textblock*}{9.5cm}(2.13cm,20.85cm)
+\begin{adjustwidth}{-2mm}{0pt}
+% Multi-columns: 2 columns
+\begin{multicols}{2}
+\begin{itemize}\setlength\itemsep{-1.5pt}
     \item Python
+    \item R
     \item Java
     \item MATLAB
+    \columnbreak
     \item SQL
     \item Wolfram Mathematica
+    \item Git
+    \item Excel
 \end{itemize}
+\end{multicols}
+\end{adjustwidth}
 \end{textblock*}
 
 %---------------------------------------------------------------------------------
 %	LANGUAGES
 %---------------------------------------------------------------------------------
-\begin{textblock*}{5.8cm}(8.3555cm,19.45cm)
+\begin{textblock*}{7.42cm}(13.511cm,19.85cm)
 % Section title
-\begin{rSection}{\large{Languages}}
+\begin{rSection}{Languages}
 \end{rSection}
 \end{textblock*}
+
 % Section details
-\begin{textblock*}{10cm}(8.3555cm,20.45cm)
-\begin{itemize}\setlength\itemsep{-0.5pt}
+\begin{adjustwidth}{-2mm}{0pt}
+\begin{textblock*}{7.13cm}(13.751cm,20.85cm)
+\begin{itemize}\setlength\itemsep{-1.5pt}
+\vspace{8pt}
     \item Spanish (native)
     \item Basque (native)
-    \item English (advanced C1)
+    \item English (native proficiency C2)
     \item French (intermediate B1)
 \end{itemize}
 \end{textblock*}
-
-%---------------------------------------------------------------------------------
-%	INTERESTS
-%---------------------------------------------------------------------------------
-\begin{textblock*}{5.8cm}(14.611cm,19.45cm)
-% Section title
-\begin{rSection}{\large{Interests}}
-\end{rSection}
-\end{textblock*}
-% Section details
-\begin{textblock*}{10cm}(14.611cm,20.45cm)
-\begin{itemize}\setlength\itemsep{-0.5pt}
-    \item Reinforcement learning (RL)
-    \item Algorithmic trading
-    \item Sports analytics
-\end{itemize}
-\end{textblock*}
-\end{multicols}
-
+\end{adjustwidth}
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
