@@ -190,7 +190,9 @@
           <a href="#projects" class="nav-link">Projects</a>
         </li>
         <li>
-          <a href="#education" class="nav-link">Education</a>
+          <center>
+          <a href="#education" class="nav-link">Education <br> + <br> Experience</a>
+          </center>
         </li>
         <li>
           <a href="#skills" class="nav-link">Skills</a>
@@ -220,7 +222,7 @@
           <h1>About</h1>
           <h6>Myself</h6>
         </div>
-        <p>Kaixo! I'm Aritz, a ML engineer intern in Switzerland and, to be honest, this website is my first HTML/CSS/JavaScript project. <br><br>
+        <p>Kaixo! I'm Aritz, a ML engineer intern in Switzerland, and this website is my first HTML/CSS/JavaScript project. <br><br>
         As a physics graduate, I have experience in performing data analysis in a wide range of fields; particle physics, astrophysics, optics, materials science, chemical physics, quantum physics... <br><br>
         The aspiration for mastering state-of-the-art techniques motivated me to initiate my first ML application as my bachelor thesis, and I've been hooked ever since. <br><br>
         I have passion for diverse subjects (reinforcement learning, algorithmic trading, sports analytics, etc.), and I'm currently looking for enhancing my skills in data science, software development and AI/ML.  <br><br>        When I'm not learning, I enjoy running and playing the piano.
@@ -228,7 +230,7 @@
         <div class="social-media">
           <ul class="nav-list">
             <li>
-              <a href="https://www.linkedin.com/in/aritz-lizoain-05a0b91a9/" class="icon-link">
+              <a href="https://www.linkedin.com/in/aritz-lizoain/" class="icon-link">
                 <i class="fab fa-linkedin-in"></i>        
               </a>
             </li>
@@ -241,7 +243,7 @@
               <button>
                 <a href="https://www.dropbox.com/s/m01t/CV_Aritz_Lizoain_PDF.pdf?dl">Download my CV</a>
               </button>
-              <div class="updated"><z>(Updated 28.10.2020)</z></div>
+              <div class="updated"><z>(Updated 17.05.2021)</z></div>
             </div>
             </ul>
         </div>
@@ -304,7 +306,7 @@
 
       <div class="projects-item">
         <div class="projects-description has-margin-right" data-aos="fade-right" data-aos-delay="1400">
-          <h6>MATLAB, SQL, Wolfram Mathematica, etc.</h6>
+          <h6>R, MATLAB, SQL, Wolfram Mathematica, etc.</h6>
           <h1><b>Other projects</b></h1>
           <p>Small projects that I work on during my free time.</p>
           <a href="https://github.com/aritzLizoain?tab=repositories" class="cta">More information</a>
@@ -325,35 +327,44 @@
         <!-- <h6>Past and current education</h6> -->
       </div>
       <div class="education" data-aos="fade-down" data-aos-delay="200">
-        <ul>
-          <li class="date" data-date="2020 - Present" location="Switzerland">           
+        <ol>
+          <li class="date" data-date="Nov 2020 - May 2021" location="St. Gallen, Switzerland">           
             <h1>Machine Learning Engineer</h1>
-            <p>CHEQUE - Internship</p>
+            <p>CHEQUE - Der intelligente Cloudspeicher</p>
+            <h6>
+              <br>
+                <ul>
+                  <li>Researched state-of-the-art machine learning implementations in Python, in addition to performing data wrangling and feature engineering to develop a document management mobile application in a fintech start-up.</li>
+                  <li>Employed transfer and ensemble learning in object detection models trained on self-annotated images for multidomain document layout analysis focused on legal and financial records (e.g. contracts, invoices).</li>
+                  <dl>
+                    <li class="margin">Libraries: Detectron2, TensorFlow, PyTorch, YOLOv5, LayoutLM.</li>
+                  </dl>
+                  <li>Achieved above 97% accuracy in text classification by applying text mining and NLP techniques (e.g. keyword extraction, topic modeling) to unstructured data in English and German.</li>
+                  <dl>
+                    <li class="margin">Libraries & methods: NLTK, scikit-learn, BERT, Gensim, spaCy, SVM, Naive Bayes.</li>
+                  </dl>
+                  <li>Held 2-4 meetings per week with the founder to analyze business cases and brainstorm technical solutions to customer needs, such as reducing by 90% the data required for training a reliable object detection model.</li>
+                </ul>
+              </br>
+            </h6>
           </li>
-          <li class="date" data-date="2016 - 2020" location="Santander, Spain">           
+          <li class="date" data-date="Sept 2016 - Sept 2020" location="Santander, Spain">           
             <h1>Universidad de Cantabria (UC)</h1>
             <p>Bachelor of Science in Physics</p>
             <h6>
               <br>
-              <b>Relevant courses:</b> Advanced Computation, Programming, Numerical Methods,
-              Laboratory Computational Tools, Advanced Experimental Techniques (with honors),
-              Ordinary and Partial Differential Equations, Linear Algebra, Differential
-              and Integral Calculus.
-              <br>
-              <br>
-              <b>Relevant topics:</b> Data processing, numerical analysis, object-oriented programming,
-              probability and statistics, software development.
+              <b>Relevant coursework:</b> probability & statistics, numerical analysis, data processing & visualization, software engineering principles, object-oriented programming (OOP), data structures & algorithms, linear algebra, multivariable calculus, differential equations (ODEs & PDEs).
             </h6>
           </li>
-          <li class="date" data-date="2018 - 2019" location="Zürich, Switzerland">
+          <li class="date" data-date="Sept 2018 - Sept 2019" location="Zürich, Switzerland">
             <h1>Universität Zürich (UZH)</h1>
             <p>Bachelor of Science in Physics / Erasmus+</p>
             <h6>
               <br>
-              <b>Relevant courses:</b> Statistical Mechanics and Molecular Simulations.
+              <b>Relevant coursework:</b> statistical mechanics, molecular dynamics.
             </h6>
           </li>
-        </ul>
+        </ol>
       </div>
     </div>
   </section>
@@ -366,35 +377,53 @@
         <!-- <h6>Technical skills</h6> -->
       </div>
       <div class="my-skills">
-        <div class="skill" data-aos="fade-in" data-aos-delay="200">
+        <div class="skill" data-aos="fade-in" data-aos-delay="100">
           <div class="icon-container"> 
             <i class="fab fa-python"></i>
           </div>
           <h1>Python</h1>
         </div>
-        <div class="skill" data-aos="fade-in" data-aos-delay="400">
+        <div class="skill" data-aos="fade-in" data-aos-delay="200">
+          <div class="icon-container">
+            <i class="fab fa-r-project"></i>
+          </div>
+          <h1>R</h1>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="300">
           <div class="icon-container">
             <i class="fab fa-java"></i>
           </div>
           <h1>Java</h1>
         </div>
-        <div class="skill" data-aos="fade-in" data-aos-delay="600">
+        <div class="skill" data-aos="fade-in" data-aos-delay="400">
           <div class="icon-container">
             <i class="fas fa-chart-area"></i>
           </div>
           <h1>MATLAB</h1>
         </div>
-        <div class="skill" data-aos="fade-in" data-aos-delay="800">
+        <div class="skill" data-aos="fade-in" data-aos-delay="500">
           <div class="icon-container">
             <i class="fas fa-database"></i>
           </div>
           <h1>SQL</h1>
         </div>
-        <div class="skill" data-aos="fade-in" data-aos-delay="1000">
+        <div class="skill" data-aos="fade-in" data-aos-delay="600">
           <div class="icon-container">
             <i class="fas fa-atom"></i>
           </div>
           <h1>Wolfram Mathematica</h1>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="700">
+          <div class="icon-container">
+            <i class="fab fa-git-square"></i>
+          </div>
+          <h1>Git</h1>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="800">
+          <div class="icon-container">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <h1>Excel</h1>
         </div>
       </div>
     </div>
@@ -471,7 +500,7 @@
     <div class="up" id="up">
       <i class="fas fa-chevron-up"></i>
     </div>
-    <p>&copy; 2020 Aritz Lizoain</p>
+    <p>&copy; 2021 Aritz Lizoain</p>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

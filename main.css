@@ -185,13 +185,13 @@ header{
     align-items: center;
 }
 
-li{
-    margin: 0 0.5rem;
+header li{
+    margin: 0 4rem;
 }
 
 .nav-link{
     font-family: 'Permanent Marker', cursive; 
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 1rem;
 }
 
@@ -457,7 +457,7 @@ button:hover{
 
 /* -------------------------------------------------------EDUCATION---------------------------------------------------------- */
 /*Start education timeline*/
-.education ul{
+.education ol{
     border-left: 4px solid #24c8f0; 
     border-radius: .8rem;
     background-color: rgba(0, 0, 0, 0.05);
@@ -467,6 +467,18 @@ button:hover{
     list-style-type: none;
     text-align: left;
     width: 70%;
+}
+
+.education li{
+    margin: 0 -8rem 0 2rem;
+    margin-top: 1rem;
+    list-style-type: disc;
+}
+
+.education .margin{
+    margin: 0 6rem;
+    margin-top: 1rem;
+    list-style-type: circle;
 }
 
 .education h1{
@@ -494,6 +506,7 @@ button:hover{
     padding-bottom: 1rem;
     position: relative;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    list-style-type: none;
 }
 
 .education .date:last-of-type{
@@ -511,7 +524,7 @@ button:hover{
 }
 
 .education .date::before{
-    left: -23.5rem;
+    left: -25.5rem;
     text-align: right;
     min-width: 14rem;
     font-size: 1.7rem;
@@ -530,7 +543,7 @@ button:hover{
     content: '';
     box-shadow: 0 0 0 4px #fd57bf;
     border-radius: 100%;
-    left: -6.45rem;
+    left: -7.9rem;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #313531;
@@ -546,7 +559,7 @@ button:hover{
 .my-skills{
     margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     grid-gap: 2.5rem;
     text-align: center;
 }
@@ -792,6 +805,15 @@ input[type="submit"]:hover{
     .about-heading{
         margin-bottom: 10rem;
     }
+
+    header li{
+        margin: 0 2rem;
+    }
+
+    .education li{
+        margin: 0 0rem 0 2rem;
+    }
+   
 }
 
 @media screen and (max-width: 768px) {
@@ -812,12 +834,12 @@ input[type="submit"]:hover{
         flex-direction: column;
     }
 
-    li{
-        margin: 0.5rem 0rem;
+    header li{
+        margin: 2.5rem 0rem;
     }
 
     .nav-link{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .about-heading{
@@ -865,21 +887,29 @@ input[type="submit"]:hover{
     }
 
     .education .date::before{
-        left: -21.5rem;
+        left: -22.5rem;
     }
 
     .education .date::after{
-        left: -5.955rem;
+        left: -4.9rem;
     }
     
     .education h6{
         margin-right: -1rem;
     }
 
-    .education ul{
-        margin: 0 17rem;
+    .education ol{
+        margin: 0 18rem;
+        padding: 2rem;
     }
     
+    .education li{
+        margin: 0 -1rem 0 2rem;
+    }
+    
+    .education .margin{
+        margin: 0 5rem;
+    }    
 }
 
 @media screen and (max-width: 600px) {
@@ -896,8 +926,12 @@ input[type="submit"]:hover{
         font-size: 1.4rem;
     }
 
+    header li{
+        margin: 2.5rem 0rem;
+    }
+
     .nav-link{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .about .container{
@@ -934,24 +968,30 @@ input[type="submit"]:hover{
     }
 
     .education .date::before{
-        left: -21.5rem;
-    }
-
-    .education .date::before{
+        left: -20.5rem;
         font-size: 1.4rem;
     }
-
+    
     .education h6{
-        margin-right: -1rem;
+        font-size: 1;
+        margin-right: -7.6rem;
     }
 
     .education h1{
-        margin-right: -1rem;
+        margin-right: 0rem;
     }
 
-    .education ul{
-        margin: 0 13rem;
+    .education ol{
+        margin: 0 14rem;
     }
+
+    .education li{
+        margin: 0 3rem 0 2rem;
+    }
+    
+    .education .margin{
+        margin: 0 5rem;
+    } 
 
     form{
         width: 100%;
