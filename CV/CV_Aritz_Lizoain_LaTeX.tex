@@ -10,8 +10,9 @@
 %---------------------------------------------------------------------------------
 % Use the custom resume.cls style
 \documentclass{resume} 
-% Times New Roman font
-\usepackage{mathptmx} 
+% Font
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
 % + sign
 \def\Plus{\texttt{+}} 
 % Multi-column option
@@ -25,17 +26,21 @@
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 % Text color
 \usepackage[usenames,dvipsnames]{xcolor}
-% Create new color
-\definecolor{lightGreen}{RGB}{185,255,110}
+\definecolor{NavyBlue}{HTML}{02075d}
+\definecolor{LightNavyBlue}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{36454F}
 % rSection style
 \renewenvironment{rSection}[1]{
 \sectionskip
 \vspace{-3.5pt}
-\colorbox{lightGreen}{\hspace{-3pt}\MakeUppercase{\large{\textbf{#1}}}}
+\color{NavyBlue}{\hspace{-3pt}\MakeUppercase{\Large{\textbf{#1}}}}
 \vspace{3pt}
+\color{NavyBlue}
 \hrule
 \hrule
 \hrule
+\color{black}
 \begin{list}{}{
 \setlength{\leftmargin}{1.5em}
 }
@@ -43,13 +48,14 @@
 }{
 \end{list}
 }
+
 % Links
 \usepackage[colorlinks = true,
-            linkcolor = blue,
-            urlcolor  = blue,
-            citecolor = blue,
-            anchorcolor = blue]{hyperref}
-\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+            linkcolor = black,
+            urlcolor  = black,
+            citecolor = black,
+            anchorcolor = black]{hyperref}
+\newcommand{\MYhref}[3][black]{\href{#2}{\color{#1}{#3}}}%
 % Text position settings
 \usepackage[absolute]{textpos}
 \setlength{\TPHorizModule}{30mm}
@@ -71,9 +77,12 @@
 % Enumerate
 \usepackage{enumitem}
 % Author email
-\newcommand*{\Authoremail}{Xxxxxxx@xxxxx.xxx}
+\newcommand*{\Authoremail}{XXXXXX@XXXX.com}
 % Change itemize sub-bullet style to a small empty circle
-\renewcommand{\labelitemii}{\small$\circ$}
+\renewcommand{\labelitemi}{\textcolor{SlateGrey}{\textbullet}}
+
+\usepackage{titlesec}
+\titleformat*{\subsection}{\large\bfseries}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -87,25 +96,26 @@
 \vspace{-1.05in}
 % Personal info
 % Name, lastname and nationality
-\textbf{\LARGE{Aritz Lizoain}} \hspace*{84pt} Nationality: Xxxxxxx 
+\textbf{\huge{Aritz Lizoain}}
 
 % Email and date of birth
-\href{mailto:\Authoremail}{\faicon{envelope} \Authoremail} \hspace*{70pt} Date of Birth: XX.XX.XXXX 
+\href{mailto:\Authoremail}{\color{NavyBlue} \faicon{envelope} \color{LightGrey} \Authoremail} \hspace*{76pt} \color{LightGrey} Nationality: XXXXXX 
 
 % Linkedin and phone number
-{\href{https://linkedin.com/in/aritz-lizoain}{\faicon{linkedin-square} linkedin.com/in/aritz-lizoain}} \hspace*{46pt} \faicon{phone} (\Plus XX) XX XXX XX XX (Xxxxxx)
+{\href{https://linkedin.com/in/aritz-lizoain}{\color{NavyBlue} \faicon{linkedin-square} \color{LightGrey} linkedin.com/in/aritz-lizoain}} \hspace*{46pt} Residence permit: X
+% \color{NavyBlue} \faicon{phone} \color{LightGrey} 
 
 % GitHub and phone number
-{\href{https://github.com/aritzLizoain}{\faicon{github} https://github.com/aritzLizoain}} \hspace*{35.5pt} \faicon{phone} (\Plus XX) XXX XX XX XX (Xxxxxx)  
+{\href{https://github.com/aritzLizoain}{\color{NavyBlue} \faicon{github} \color{LightGrey} https://github.com/aritzLizoain}} \hspace*{34pt} \color{NavyBlue} \faicon{phone} \color{LightGrey} (\Plus XX) XX XXX XX XX %
 
-\vspace*{-20pt}
+\vspace*{-10pt}
   
 % Photo
-\begin{tikzpicture}[remember picture,overlay,shift={(current page.north east)}]
-\node[anchor=north east,xshift=-1.05in,yshift=-0.45in]{\includegraphics[width=3cm]{random_photo.png}};
+\begin{tikzpicture}[remember picture,overlay,shift={(current page.north east)}, xshift=-1.6in, yshift=-1.2in]
+\clip (0,0) circle (1.8cm) node {\includegraphics[width=3.6cm]{icon.jpg}};
 \end{tikzpicture}
 
-\vspace{12pt}
+\vspace{20pt}
 
 %---------------------------------------------------------------------------------
 %	EDUCATION
@@ -115,130 +125,176 @@
 
 % Education 1
 \begin{adjustwidth}{-6mm}{0pt}
-\vspace{-5pt}
+\vspace{-7pt}
 \normalsize
 % Organization name and location
-\subsection*{Universidad de Cantabria (UC) \hfill \normalsize{Santander, Spain}}
+\subsection*{M.Sc. in Statistics \normalfont \normalsize \hfill { Sept 2021 - Present}}
 \vspace{-7pt}
 % Studies specification and dates 
-\textit{Bachelor of Science in Physics} \hfill Sept 2016 - Sept 2020
+\textit{\color{LightNavyBlue} Universté de Neuchâtel} %\hfill \color{LightGrey} Neuchâtel, Switzerland
+\newline
+Current grade: 5.8/6.0
 \end{adjustwidth}
-\vspace{-5pt}
 
 % Relevant courses
-\begin{adjustwidth}{-6.5mm}{0pt}
+\begin{adjustwidth}{-9mm}{0pt}
 \begin{itemize}
-    \item Relevant coursework: probability $\&$ statistics, numerical analysis, data processing $\&$ visualization, software engineering principles, object-oriented programming (OOP), data structures $\&$ algorithms, linear algebra, multivariable calculus.
+    \item \color{LightGrey} Relevant coursework: computational statistics, data mining, generalized linear models, statistical learning, time series analysis, multivariate analysis.
+    
+    % Also: survey sampling, inferential statistics, stochastic processes, bayesian statistics, applied statistics, design of experiments, programming, statistical software, probability theory, advanced regression methods.
 \end{itemize}
 \end{adjustwidth}
 
 % Dotted line
-\vspace{-10pt}
+\vspace{-12pt}
 \begin{tikzpicture}
 \hspace{-16pt}\draw [loosely dotted] (0,0) -- (18.9,0);
 \end{tikzpicture}
-\vspace{-22pt}
+\vspace{-24pt}
 
 % Education 2
 \begin{adjustwidth}{-6mm}{0pt}
 \vspace{-5pt}
 \normalsize
 % Organization name and location
-\subsection*{Universit{\"a}t Z{\"u}rich (UZH) \hfill \normalsize{Z{\"u}rich, Switzerland}}
+\subsection*{B.Sc. in Physics \normalfont \normalsize \hfill { Sept 2016 - Sept 2020}}
 \vspace{-7pt}
-% Studies specification and dates
-\textit{Bachelor of Science in Physics / Erasmus\Plus} \hfill Sept 2018 - Sept 2019
+% Studies specification and dates 
+\textit{\color{LightNavyBlue} Universidad de Cantabria $|$ Universit{\"a}t Z{\"u}rich \color{LightGrey}(2018-2019)} %\hfill \color{LightGrey} Santander, Spain
 \end{adjustwidth}
-\vspace{-5pt}
 
-% Relevant courses
-\begin{adjustwidth}{-6.5mm}{0pt}
-\begin{itemize}
-    \item Relevant coursework: statistical mechanics, molecular dynamics.
-\end{itemize}
-\end{adjustwidth}
+% % Relevant courses
+% \begin{adjustwidth}{-9mm}{0pt}
+% \begin{itemize}
+%     \item Relevant coursework: probability $\&$ statistics, numerical analysis, data processing $\&$ visualization, software engineering principles, object-oriented programming (OOP), data structures $\&$ algorithms, linear algebra, multivariable calculus. Zurich: statistical mechanics, molecular dynamics.
+% \end{itemize}
+% \end{adjustwidth}
 
 \end{rSection}
 
 %---------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE
 %---------------------------------------------------------------------------------
-\vspace{2pt}
+\vspace{15pt} % lehen 5pt
 % Section title
 \begin{rSection}{Professional Experience}
 
-% Internship
+% Research Assistant
 \begin{adjustwidth}{-6mm}{0pt}
-\vspace{-5pt}
+\vspace{-7pt}
 % Position and location
-\subsection*{Machine Learning Engineer \hfill \normalsize{St. Gallen, Switzerland}}
+\subsection*{Statistician/Data analyst intern \normalfont \normalsize \hfill Jul 2022 - Present}
 \vspace{-7pt}
 % Company and dates
-\textit{Cheque - Der intelligente Cloudspeicher} \hfill Nov 2020 - May 2021
+\textit{\color{LightNavyBlue} Diabetes Center Berne (DCB)} %\hfill \color{LightGrey} Bern, Switzerland
 \end{adjustwidth}
-\begin{adjustwidth}{-6.5mm}{0pt}
+\begin{adjustwidth}{-9mm}{0pt}
 
 % Project details
 \begin{itemize}
 
     % Overview
-    \item Researched state-of-the-art machine learning implementations in Python, in addition to performing data wrangling and feature engineering to develop a document management mobile application in a fintech start-up.
+    \color{LightGrey}
+    \item Data analysis and modeling of in-vitro glucose measurements.
     
-    % Technical 1 (Computer Vision)
-    \item Employed transfer and ensemble learning in object detection models trained on self-annotated images for multidomain document layout analysis focused on legal and financial records (e.g. contracts, invoices).
-    
-    % Sub bullet    
-    \begin{itemize}
-    \vspace{-5pt}
-        % Used libraries/methods
-        \item Libraries: Detectron2, TensorFlow, PyTorch, YOLOv5, LayoutLM.
-    \end{itemize}
-
-    % Technical 2 (NLP)
-    \item Achieved above 97$\%$ accuracy in text classification by applying text mining and natural language processing (NLP) techniques (e.g. keyword extraction, topic modeling) to unstructured data in English and German.
-    
-    % Sub bullet  
-    \begin{itemize}
-    \vspace{-5pt}
-        %Used libraries/methods
-        \item Libraries $\&$ methods: NLTK, scikit-learn, BERT, Gensim, spaCy, support-vector machine (SVM), Naive Bayes.
-    \end{itemize}
+    % Technical
+    % \item 
    
     % Impact
-    \item Held 2-4 meetings per week with the founder to analyze business cases and brainstorm technical solutions to customer needs, such as reducing by 90$\%$ the data required for training a reliable object detection model.
+    % \item 
     
 \end{itemize}
 \end{adjustwidth}
 
 % Dotted line
-\vspace{-10pt}
+\vspace{-12pt}
 \begin{tikzpicture}
 \hspace{-16pt}\draw [loosely dotted] (0,0) -- (18.9,0);
 \end{tikzpicture}
-\vspace{-22pt}
+\vspace{-24pt}
 
-% Bachelor thesis
+% Internship
 \begin{adjustwidth}{-6mm}{0pt}
 \vspace{-5pt}
-% Title and location
-\subsection*{\href{https://github.com/aritzLizoain/CNN-Image-segmentation}{Search for dark matter with deep neural networks} \hfill \normalsize{Santander, Spain}}
+% Position and location
+\subsection*{Machine Learning Engineer \normalfont \normalsize \hfill Nov 2020 - May 2021}
 \vspace{-7pt}
 % Company and dates
-\textit{Institute of Physics of Cantabria (IFCA)} \hfill Feb 2020 - Sept 2020
-\end{adjustwidth} 
-\begin{adjustwidth}{-6.5mm}{0pt}
+\textit{\color{LightNavyBlue} Cheque - Der intelligente Cloudspeicher} %\hfill \color{LightGrey} St. Gallen, Switzerland
+\end{adjustwidth}
+\begin{adjustwidth}{-9mm}{0pt}
 
 % Project details
 \begin{itemize}
 
     % Overview
-    \item Pioneeringly discriminated pixel-sized dark matter candidate signals on 16 megapixel particle detector images by designing and implementing an end-to-end image segmentation pipeline for automated data quality monitoring.
+    \color{LightGrey}
+    \item Researched state-of-the-art machine learning implementations in Python, in addition to performing data wrangling and feature engineering to develop a document management mobile application.
+    % in a fintech start-up.
+    
+    % Technical 1 (Computer Vision)
+    \item Employed transfer and ensemble learning in object detection models trained on self-annotated images for document layout analysis.
+    % multidomain document layout analysis
+    % focused on legal and financial records (e.g. contracts, invoices).
+    
+    % Sub bullet    
+    % \begin{itemize}
+    % \vspace{-5pt}
+    %     % Used libraries/methods
+    %     \item Libraries: Detectron2, TensorFlow, PyTorch, YOLOv5, LayoutLM.
+    % \end{itemize}
+
+    % Technical 2 (NLP)
+    \item Achieved above 97$\%$ accuracy in text classification by applying text mining and natural language processing (NLP) techniques to unstructured data in English and German.
+    % (e.g. keyword extraction, topic modeling)
+    
+    % Sub bullet  
+    % \begin{itemize}
+    % \vspace{-5pt}
+    %     %Used libraries/methods
+    %     \item Libraries $\&$ methods: NLTK, scikit-learn, BERT, Gensim, spaCy, support-vector machine (SVM), Naive Bayes.
+    % \end{itemize}
+   
+    % Impact
+    % \item Held 2-4 meetings per week with the founder to analyze business cases and brainstorm technical solutions to customer needs.
+    % , such as reducing by 90$\%$ the data required for training a reliable object detection model.
+    
+\end{itemize}
+\end{adjustwidth}
+
+% Dotted line
+\vspace{-12pt}
+\begin{tikzpicture}
+\hspace{-16pt}\draw [loosely dotted] (0,0) -- (18.9,0);
+\end{tikzpicture}
+\vspace{-24pt}
+
+% Bachelor thesis
+\begin{adjustwidth}{-6mm}{0pt}
+\vspace{-5pt}
+% Title and location
+\subsection*{\href{https://github.com/aritzLizoain/CNN-Image-segmentation}{Search for dark matter with deep neural networks} \normalfont \normalsize \hfill Feb 2020 - Sept 2020}
+\vspace{-7pt}
+% Company and dates
+\textit{\color{LightNavyBlue} Institute of Physics of Cantabria (IFCA)} %\hfill \color{LightGrey} Santander, Spain
+\end{adjustwidth} 
+\begin{adjustwidth}{-9mm}{0pt}
+
+% Project details
+\begin{itemize}
+
+    % Overview
+    \color{LightGrey}
+    \item Pioneeringly discriminated pixel-sized dark matter candidate signals on 16 megapixel images by designing and implementing an end-to-end image segmentation pipeline.
+    % particle detector images
+    % for automated data quality monitoring.
     
     % Technical
-    \item Built from scratch, trained, optimized (e.g. data augmentation, hyperparameter tuning), and evaluated a Convolutional Neural Network (CNN) with Keras, which achieved a 99$\%$ test accuracy.
+    \item Built from scratch, trained, optimized, and evaluated a Convolutional Neural Network (CNN) with Keras, which achieved a 99$\%$ test accuracy.
+    % (e.g. data augmentation, hyperparameter tuning)
     
     % Impact
-    \item Obtained a bachelor thesis grade of 9.5/10, and earned the opportunity to present results and contribute to the 'DarkMachines' collaboration.
+    % \item Obtained a bachelor thesis grade of 9.5/10, and earned the opportunity to present results and contribute to the 'DarkMachines' collaboration.
     
 \end{itemize}
 \end{adjustwidth}
@@ -248,27 +304,29 @@
 %---------------------------------------------------------------------------------
 %	TECHNICAL SKILLS
 %---------------------------------------------------------------------------------
-\begin{textblock*}{9.8cm}(1.97cm,19.85cm)
+\begin{textblock*}{9.8cm}(1.97cm,20.5cm)
 % Section title
 \begin{rSection}{Technical Skills}
 \end{rSection}
 \end{textblock*}
 
 % Section details
-\begin{textblock*}{9.5cm}(2.13cm,20.85cm)
+\begin{textblock*}{9.5cm}(2.13cm,21.4cm)
 \begin{adjustwidth}{-2mm}{0pt}
 % Multi-columns: 2 columns
 \begin{multicols}{2}
-\begin{itemize}\setlength\itemsep{-1.5pt}
+\begin{itemize}\setlength\itemsep{2.5pt}
+\color{black}
     \item Python
-    \item R
-    \item Java
-    \item MATLAB
+    \item MATLAB %(Base $\&$ STAT)
+    \item Stata
     \columnbreak
-    \item SQL
-    \item Wolfram Mathematica
-    \item Git
-    \item Excel
+    \item R
+    \item SAS
+    \item Java
+    %\item Excel
+    %\item SQL
+    %\item Wolfram Mathematica
 \end{itemize}
 \end{multicols}
 \end{adjustwidth}
@@ -277,7 +335,7 @@
 %---------------------------------------------------------------------------------
 %	LANGUAGES
 %---------------------------------------------------------------------------------
-\begin{textblock*}{7.42cm}(13.511cm,19.85cm)
+\begin{textblock*}{7.42cm}(13.511cm,20.5cm)
 % Section title
 \begin{rSection}{Languages}
 \end{rSection}
@@ -285,15 +343,69 @@
 
 % Section details
 \begin{adjustwidth}{-2mm}{0pt}
-\begin{textblock*}{7.13cm}(13.751cm,20.85cm)
+\begin{textblock*}{7.13cm}(13.751cm,21.2cm)
 \begin{itemize}\setlength\itemsep{-1.5pt}
 \vspace{8pt}
-    \item Spanish (native)
-    \item Basque (native)
-    \item English (native proficiency C2)
-    \item French (intermediate B1)
+    \item Spanish \hspace*{5.6pt} \color{LightGrey}(native)\color{black}
+    \item Basque \hspace*{7.7pt} \color{LightGrey}(native)\color{black}
+    \item English \hspace*{8.5pt} \color{LightGrey}(native proficiency C2)\color{black}
+    \item French \hspace*{10pt} \color{LightGrey}(intermediate B1)
 \end{itemize}
 \end{textblock*}
 \end{adjustwidth}
+
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 3 column technical skills defining proficiency/preferred
+% % Section details
+% \begin{textblock*}{9.5cm}(2.13cm,20.85cm)
+% \begin{adjustwidth}{-2mm}{0pt}
+% % Multi-columns: 2 columns
+% \begin{multicols}{3}
+% \begin{itemize}\setlength\itemsep{-1.5pt}
+% \color{LightGrey}
+
+%     \item[] Preferred
+    
+%     % Dotted line
+%         \vspace{-13.5pt}
+%         \begin{tikzpicture}
+%         \hspace{-16pt}\draw [loosely dotted] (0,0) -- (3.24,0);
+%         \end{tikzpicture}
+%     \color{white}    
+%     \item[] .
+        
+%     \columnbreak
+
+% \color{black}
+%     \item Python
+    
+%         % Dotted line
+%         \vspace{-8pt}
+%         \begin{tikzpicture}
+%         \hspace{-16pt}\draw [loosely dotted] (0,0) -- (3.24,0);
+%         \end{tikzpicture}
+%         %\vspace{-12pt}
+        
+%     \item MATLAB
+%     \item Stata
+%     \columnbreak
+%     \item R
+    
+%         % Dotted line
+%         \vspace{-8pt}
+%         \begin{tikzpicture}
+%         \hspace{-16pt}\draw [loosely dotted] (0,0) -- (3,0);
+%         \end{tikzpicture}
+%         %\vspace{-12pt}
+        
+%     \item SAS %(Base $\&$ STAT)
+%     \item Excel
+%     %\item Java
+%     %\item SQL
+%     %\item Wolfram Mathematica
+% \end{itemize}
+% \end{multicols}
+% \end{adjustwidth}
+% \end{textblock*}
