@@ -407,6 +407,22 @@ button:hover{
         background-position: 400%;
     }
 }
+
+.about-details .cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #24c8f0;
+    transition: color 650ms;
+}
+
+.about-details .cta:hover{
+    background: linear-gradient(to top, #fd57bf,#fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /*End about*/
 
 /* -------------------------------------------------------PROJECTS----------------------------------------------------------- */
