@@ -579,6 +579,105 @@ button:hover{
 }
 /*End education timeline*/
 
+/* -------------------------------------------------------FURTHER---------------------------------------------------------- */
+/*Start further timeline*/
+.further ol{
+    border-left: 4px solid #24c8f0; 
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin: 0 25rem;
+    position: relative;
+    padding: 5rem;
+    list-style-type: none;
+    text-align: left;
+    width: 70%;
+}
+
+.further li{
+    margin: 0 -8rem 0 2rem;
+    margin-top: 1rem;
+    list-style-type: disc;
+}
+
+.further .margin{
+    margin: 0 6rem;
+    margin-top: 1rem;
+    list-style-type: circle;
+}
+
+.further h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    margin-right: -5rem;
+}
+
+.further h6{
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    margin-right: -5rem;
+}
+
+.further p{
+    opacity: .8; 
+    margin-right: -5rem;
+}
+
+.further .date{
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    list-style-type: none;
+}
+
+.further .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.further .date::before,
+.further .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.further .date::before{
+    left: -25.5rem;
+    text-align: right;
+    min-width: 14rem;
+    font-size: 1.7rem;
+    content: attr(data-date) '\A' attr(location);
+    white-space:pre;
+}
+
+.further .location{
+    position: relative;
+    text-align: right;
+    min-width: 12rem;
+    flex: 1;
+}
+
+.further .date::after{
+    content: '';
+    box-shadow: 0 0 0 4px #fd57bf;
+    border-radius: 100%;
+    left: -7.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #313531;
+}
+
+.further .date a{
+    left: -30rem;
+}
+/*End further timeline*/
+
 /* --------------------------------------------------------SKILLS------------------------------------------------------------ */
 /*Start skills*/
 .my-skills{
@@ -838,6 +937,10 @@ input[type="submit"]:hover{
     .education li{
         margin: 0 0rem 0 2rem;
     }
+
+    .further li{
+        margin: 0 0rem 0 2rem;
+    }
    
 }
 
@@ -935,6 +1038,31 @@ input[type="submit"]:hover{
     .education .margin{
         margin: 0 5rem;
     }    
+
+    .further .date::before{
+        left: -22.5rem;
+    }
+
+    .further .date::after{
+        left: -4.9rem;
+    }
+    
+    .further h6{
+        margin-right: -1rem;
+    }
+
+    .further ol{
+        margin: 0 18rem;
+        padding: 2rem;
+    }
+    
+    .further li{
+        margin: 0 -1rem 0 2rem;
+    }
+    
+    .further .margin{
+        margin: 0 5rem;
+    }    
 }
 
 @media screen and (max-width: 600px) {
@@ -1020,6 +1148,37 @@ input[type="submit"]:hover{
     }
     
     .education .margin{
+        margin: 0 5rem;
+    } 
+
+    .further p{
+        font-size: 1.6;
+        margin-right: -1rem;
+    }
+
+    .further .date::before{
+        left: -20.5rem;
+        font-size: 1.4rem;
+    }
+    
+    .further h6{
+        font-size: 1;
+        margin-right: -7.6rem;
+    }
+
+    .further h1{
+        margin-right: 0rem;
+    }
+
+    .further ol{
+        margin: 0 14rem;
+    }
+
+    .further li{
+        margin: 0 3rem 0 2rem;
+    }
+    
+    .further .margin{
         margin: 0 5rem;
     } 
 
