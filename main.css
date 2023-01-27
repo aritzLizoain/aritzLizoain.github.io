@@ -195,8 +195,8 @@ header li{
 
 .nav-link{
     font-family: 'Permanent Marker', cursive; 
-    font-size: 3rem;
-    padding: 1rem;
+    font-size: 2rem;
+    padding: 0rem;
 }
 
 .nav-link:hover,
@@ -967,7 +967,7 @@ input[type="submit"]:hover{
     }
 
     .nav-link{
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
 
     .about-heading{
@@ -1084,7 +1084,7 @@ input[type="submit"]:hover{
     }
 
     .nav-link{
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
 
     .about .container{
