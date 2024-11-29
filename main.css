@@ -190,12 +190,12 @@ header{
 }
 
 header li{
-    margin: 0 4rem;
+    margin: 0 10rem;
 }
 
 .nav-link{
     font-family: 'Permanent Marker', cursive; 
-    font-size: 2rem;
+    font-size: 3.5rem;
     padding: 0rem;
 }
 
@@ -922,16 +922,13 @@ input[type="submit"]:hover{
 /*Start media queries*/
 
 @media screen and (max-width: 1267px) {
-    .nav-link{
-        font-size: 2rem;
-    }
 
     .about-heading{
         margin-bottom: 10rem;
     }
 
     header li{
-        margin: 0 2rem;
+        margin: 0 8rem;
     }
 
     .education li{
@@ -967,7 +964,7 @@ input[type="submit"]:hover{
     }
 
     .nav-link{
-        font-size: 1.7rem;
+        font-size: 2.1rem;
     }
 
     .about-heading{
@@ -1084,7 +1081,7 @@ input[type="submit"]:hover{
     }
 
     .nav-link{
-        font-size: 1.7rem;
+        font-size: 2.1rem;
     }
 
     .about .container{
